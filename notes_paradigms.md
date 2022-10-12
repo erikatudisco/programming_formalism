@@ -27,10 +27,14 @@ What is an object? An object is the representation of a thing or concept, that e
 
 ## UML
 plantuml.org
-
+```plantuml
 @startuml
-testdot
+!theme spacelab
+skinparam actorStyle awesome
+Lecturer -d->(Present slides on UML)
+Participant-d->(learn UML from SLIDES)
 @enduml
+```
 Unified modeling language came from the Rational group and is a modeling language for describing the 
 
 ## The AGILE manifesto
