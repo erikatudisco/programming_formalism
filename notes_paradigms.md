@@ -23,19 +23,43 @@ What is an object? An object is the representation of a thing or concept, that e
 ## Functional programming
 
 
-## RUP
 
 ## UML
-plantuml.org
+The Unified modeling language was first standardized in november 1997 as [UML-98] it has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE(object oriented software enginering) it is by that nature very good att describing the Rational unified process, created by Rumbaugh, Booch and Jacobsen in the late 90s. As we 
+
+
+plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text.
 ```plantuml
 @startuml
-!theme spacelab
+!theme superhero
+title:"USECASE Diagrams"
 skinparam actorStyle awesome
 Lecturer -d->(Present slides on UML)
 Participant-d->(learn UML from SLIDES)
 @enduml
 ```
+```plantuml
+@startuml
+ class01 <|-- class02
+ class03 *-- class04
+ class05 o-- class06
+
+ class01- class03 : knows >
+ class class01 {
+    -var01 : Integer
+    Time : Date
+    #method01()
+    +get_var01()
+    {method}Without paranteces or Qualifiers
+ }
+@enduml
+```
 Unified modeling language came from the Rational group and is a modeling language for describing the 
+## RUP Rational Unified Process, a method primarily for generating larger objectoriented systems.
+
+
+
+
 
 ## The AGILE manifesto
 https://agilemanifesto.org/
@@ -43,3 +67,6 @@ https://agilemanifesto.org/
 ## AGILE Development as a respons to what they called document driven development
 
 ## SCRUM and how it fits with AGILE development
+
+## Pair Programming 
+ A tool for rapid development is the so called Pair Programming where two developers code on the same code simultatiously one as the "Driver" and one as the "Navigator" 
