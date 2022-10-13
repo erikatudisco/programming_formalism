@@ -80,6 +80,7 @@ else
 ```
 ```plantuml
 @startuml
+!theme superhero
 start
 if (stuff) then (true) 
    :action 2;
