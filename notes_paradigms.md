@@ -66,7 +66,7 @@ Participant-d->(learn UML from SLIDES)
  }
 @enduml
 ```
-
+//old style uml
 ```plantuml
 !theme amiga 
 (*)--> activity1
@@ -75,6 +75,14 @@ if "stuff" then
 -r->(*)
 else 
 --> [false](*)
+```
+```plantuml
+start
+if (stuff) then (true) 
+   :action 2;
+endif
+
+stop
 ```
 Unified modeling language came from the Rational group and is a modeling language for describing the
 
