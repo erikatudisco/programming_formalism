@@ -1,5 +1,6 @@
 # Setup
-
+Parts taken from https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/
+ and https://coderefinery.github.io/installation/
 ## Setup for Mac / Linux users
 
 
@@ -41,3 +42,9 @@ sense to download the course directory.
     typing `explorer.exe .`. This will launch the Windows File Explorer showing the
     current Linux directory.
 
+## Git 
+https://coderefinery.github.io/installation/shell-and-git/
+
+## Github
+GitHub account, best with 2-factor authentication (2FA) activated. 2FA is not strictly needed for the course but highly recommended to keep your account secure ([instructions]([https://coderefinery.github.io/installation/conda/#setting-conda-path)](https://coderefinery.github.io/installation/github/#github))
+https://coderefinery.github.io/installation/ssh/
