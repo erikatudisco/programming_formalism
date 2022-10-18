@@ -2,7 +2,8 @@
 Parts taken from https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/
  and https://coderefinery.github.io/installation/
 ## Setup for Mac / Linux users
-
+- We will use terminal to some extent.
+- Choose one of your choice, the built-in or another!
 
 ## Setup for Windows users
 
