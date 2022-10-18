@@ -12,8 +12,7 @@ computer. Neither is perhaps optimal, and the material itself has not been
 adapted specifically for Windows. Nevertheless, in principle everything
 *should* be possible to run. A few ways you could setup:
 
-- Use the Linux Bash Shell on Windows 10 (see below) _**Recommended for the
-  course**_
+- Use the Linux Bash Shell on Windows 10 (see below) 
 
 - Run as Linux through a virtual machine (and see the Linux setup above)
 - Use the Windows 10 PowerShell, install git and clone the course repository
