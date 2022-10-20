@@ -67,7 +67,7 @@ Alternatively, they can be discussed in voice or free-form text (discussion box 
 
 ## Comparing sharing papers and sharing code
 
-> <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
+<img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
 
 Citation as one form of academic credit to motivate sharing papers.
 
@@ -77,7 +77,7 @@ Sharing papers and academic credit:
 - The more interesting science is done referencing my paper, the better for me.
 - Nobody actively tries to limit the reach of their papers.
 
-> <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-code.jpg?raw=true" alt="Getting improvements back and also getting citations can motivate us to share code" width="600"/>
+<img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-code.jpg?raw=true" alt="Getting improvements back and also getting citations can motivate us to share code" width="600"/>
 
 Different ways we can benefit from sharing code.
 
@@ -218,7 +218,7 @@ This can be now reconnected to question 4 (above).
 
 ## Sharing or not sharing?
 
-> <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/in-out.jpg?raw=true" alt="Our work depends on ideas, articles, data, and software" width="600"/>
+<img src="https://github.com/coderefinery/social-coding/blob/main/content/img/in-out.jpg?raw=true" alt="Our work depends on ideas, articles, data, and software" width="600"/>
 
 > Whether and what we can share depends on how we obtained the components.
 
