@@ -2,7 +2,7 @@
 
 ## Social coding
 
-> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md)" by [https://coderefinery.org/ CodeRefinery] is licensed under [http://creativecommons.org/licenses/by/4.0/ CC BY 4.0] Minor changes were made to adjust the content to the layout of this page
+> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [https://coderefinery.org/ CodeRefinery] is licensed under [http://creativecommons.org/licenses/by/4.0/ CC BY 4.0] Minor changes were made to adjust the content to the layout of this page
 
 ```{objectives}
 - Get an overview of motivations, benefits, but also risks of sharing and reusing code.
@@ -74,7 +74,6 @@ Alternatively, they can be discussed in voice or free-form text (discussion box 
 
 Citation as one form of academic credit to motivate sharing papers.
 ```
-````
 
 Sharing papers and academic credit:
 
@@ -249,13 +248,11 @@ https://www.youtube.com/watch?v=c33AZBnRHks
 
 ## Code Review
 
-> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md)" by [https://carpentries.org/ The Carpentries] is licensed under [http://creativecommons.org/licenses/by/4.0/ CC BY 4.0] Some additions were made to extend the content about the Pair Programming section
+> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [https://carpentries.org/ The Carpentries] is licensed under [http://creativecommons.org/licenses/by/4.0/ CC BY 4.0] Some additions were made to extend the content about the Pair Programming section
 
 > The most difficult part of writing code is always to make it understandable to other people, including yourself a few months down the track. There’s certainly no shame in finding out that your code wasn’t as easy to understand or use as you’d hoped, so don’t take it personally when it happens (which it always does, at least in my experience), but treat it as an opportunity to improve.
 >
 > **Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)**
->
-> {: .testimonial}
 
 A simple objective of the review process is to catch bugs and elementary errors that might have been missed during the development phase.
 Code review can also help improve the overall quality while ensuring that code is readable and easy to understand.
@@ -291,11 +288,6 @@ The researcher may present their pipeline to describe the logical steps using do
 - The lines of code are shown for those in the meeting that know R, but the postdoc explains the steps verbally as well for those who don't understand R.
 - The group discuss and provides comments on the choices and order of the analysis pipeline, a PhD student notices a jump in logic that wasn't picked up previously, and an advanced R user in the lab makes suggestions about making some parts run faster.
 
-<!--
-- more detail about the flat hierarchy, not scalable to have the expert to the review
-- doesn't need to be an expert
--->
-
 These sessions do not rely on everyone knowing the language, and it is the responsibility of the coder to present their work clearly and logically for everyone to follow.
 Group discussions can be very informative for everyone involved and put the analysis under scrutiny.
 
@@ -307,8 +299,6 @@ Group discussions can be very informative for everyone involved and put the anal
 > - Patiently explain when things are not wrong but just stylistic differences (but make it clear that some styles are bad, often helpful e.g. asking people to guess what a function returns from its name).
 >
 > _Shared by Rob Knight with Fernando Perez in the post [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)_
->
-> {: .callout}
 
 ### Asynchronous - I'll get back to you on that
 
@@ -330,8 +320,6 @@ Asynchronous feedback removes the time pressure but can be easily forgotten!
 > Reviewing more than 400 lines of code (LoC) can have an adverse impact on your ability to find bugs, and in fact, most are found in the first 200 lines. - Recommendation from Code Review at Cisco Systems
 >
 > **[5 code review best practices. Work Life by Atlassian](https://www.atlassian.com/blog/add-ons/code-review-best-practices**), Usman Ghani\*\*
->
-> {: .testimonial}
 
 ## Multiple people can also review the code asynchronously.
 
@@ -339,8 +327,6 @@ Asynchronous feedback removes the time pressure but can be easily forgotten!
 >
 > Unlike traditional, “academic-style” peer review, most code review systems have several advantages: they’re rarely anonymous, they’re public-facing, and without the broker of an editor, contact between reviewer and reviewee can be direct and rapid.
 > This means code review is typically a fast, flexible, and interactive process.
->
-> {: .callout}
 
 > ## Github features to help with code review (Click to see)
 >
@@ -361,8 +347,6 @@ Asynchronous feedback removes the time pressure but can be easily forgotten!
 > <img src="https://i.postimg.cc/9XDbVyWQ/Screenshot-2022-02-10-at-19-11-58.png" alt="drawing" width="400"/>
 >
 > **Author: Lydia France (Junior Data Scientist, The Alan Turing Institute, UK)**
->
-> {: .solution}
 
 ### Reviewing is not about creating more work, nor the PI rewriting everything
 
@@ -381,14 +365,12 @@ It is also an opportunity for everyone to learn better practices from each other
 > _Keep it a safe environment, i.e. make sure chastising is relatively gentle even when deserved (but do point out when code doesn’t meet the required standard – frame it as a learning experience though)._
 >
 > **_Marian Petre and Greg Wilson. "Code review for and by scientists: preliminary findings." (2014)._**
->
-> {: .callout}
 
 For further considerations in code review, please read [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) chapter in _The Turing Way_.
 
 ### What to look for during Code Review
 
-<imzg src="https://the-turing-way.netlify.app/_images/readable-code.jpg" alt="drawing" width="400"/>
+<img src="https://the-turing-way.netlify.app/_images/readable-code.jpg" alt="drawing" width="400"/>
 
 Reviewing code makes a big difference. Knowledge of the language is not always necessary!
 
@@ -425,8 +407,6 @@ These are very common, everyone does this.
 > The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.
 >
 > **[Code Complete](https://www.oreilly.com/library/view/code-complete-2nd/0735619670) by Steve McConnell**
->
-> {: .testimonial}
 
 The main benefit is finding problems, and finding them early enough that there aren't frustrating consequences.
 The penalty for finding a bug once all the figures have been produced and conclusions drawn, or, worst-case scenario, after a publication, is much higher than the penalty for taking the time to review.
@@ -439,8 +419,6 @@ The penalty for finding a bug once all the figures have been produced and conclu
 > - Learning better techniques
 > - Reduced time debugging alone
 > - Knowledge exchange and group cohesion
->
-> {: .checklist}
 
 > ## For a group leader, the benefits include:
 >
@@ -451,8 +429,6 @@ The penalty for finding a bug once all the figures have been produced and conclu
 > - Group reviews reduce the work burden
 > - More robust analysis pipelines that can be reused and modified
 > - High-quality code that can be released
->
-> {: .checklist}
 
 **Important things to bear in mind:**
 
@@ -507,3 +483,4 @@ In this task you will have to:
 ## Exercise: reviewing each other's code
 
 Take the code produced by one of the group in the previous exercise and write a formal code review following the [NBIS code development guidelines](https://github.com/NBISweden/development-guidelines). Share your review with the authors and discuss. Take into consideration the NBIS guidelines when writing reviews.
+````
