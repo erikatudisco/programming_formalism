@@ -1,6 +1,16 @@
 # Code Review
 
-> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [https://carpentries.org/ The Carpentries] is licensed under [http://creativecommons.org/licenses/by/4.0/ CC BY 4.0] Some additions were made to extend the content about the Pair Programming section
+> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [https://carpentries.org/ The Carpentries] is licensed under [http://creativecommons.org/licenses/by/4.0/ CC BY 4.0] Some additions were made to extend the content about the Pair Programming section and adding some questions for the audience.
+
+## What obstacles have you encountered in code reviews?
+
+- Conflicts of interest
+- Misunderstandings
+- Misinterpretations
+- Emotional reactions: code ownership
+- Lack of feedback because of not great psychological safety
+- It will expose my "ugly code"
+- Others may find bugs and mistakes. What if the algorithm is wrong?
 
 > The most difficult part of writing code is always to make it understandable to other people, including yourself a few months down the track. There’s certainly no shame in finding out that your code wasn’t as easy to understand or use as you’d hoped, so don’t take it personally when it happens (which it always does, at least in my experience), but treat it as an opportunity to improve.
 >
