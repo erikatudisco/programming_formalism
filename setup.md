@@ -56,4 +56,17 @@ https://coderefinery.github.io/installation/ssh/
 - We encourage you to use miniconda3 for working with conda environment.
 - Please follow the steps here: https://coderefinery.github.io/installation/conda/
 
+## PlantUML
+- We will use the tool PlantUML to render UML code to grapgical diagrams and flowcharts. 
+- Please install the extension PlantUML viewer to your web browser.
+- When done you should see this:
 
+```plantuml
+@startuml
+!theme superhero
+title:"USECASE Diagrams"
+skinparam actorStyle awesome
+Lecturer -d->(Present slides on UML)
+Participant-d->(learn UML from SLIDES)
+@enduml
+```
