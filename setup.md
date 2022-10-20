@@ -57,8 +57,10 @@ https://coderefinery.github.io/installation/ssh/
 - Please follow the steps here: https://coderefinery.github.io/installation/conda/
 
 ## PlantUML
-- We will use the tool PlantUML to render UML code to grapgical diagrams and flowcharts. 
-- Please install the extension PlantUML viewer to your web browser.
+- We will use the tool PlantUML to render UML code to graphical diagrams and flowcharts. 
+- If you want PlantUML to render directly from a file on GitHub please install the extension PlantUML viewer to your web browser.
+  - Firefox: PlantUML viewer
+  - Chrome: Pegmatite
 - When done you should see the code below as a diagram.
 
 ```plantuml
