@@ -22,7 +22,6 @@ Alternatively, they can be discussed in voice or free-form text (discussion box 
 - Also think about **reasons for not sharing**.
 ```
 
-````markdown
 ## Question 1: Why would I want to share my scripts/code/data?
 
 - A: Easier to find and reproduce (scientific reproducibility)
@@ -233,4 +232,3 @@ This can be now reconnected to question 4 (above).
 > [Someone improved my code by 40,832,277,770%](https://www.youtube.com/watch?v=c33AZBnRHks)" by [https://www.youtube.com/user/standupmaths Stand-up Maths]
 
 https://www.youtube.com/watch?v=c33AZBnRHks
-````
