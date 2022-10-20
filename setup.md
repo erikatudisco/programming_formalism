@@ -55,6 +55,7 @@ https://coderefinery.github.io/installation/ssh/
 ## Miniconda3
 - We encourage you to use miniconda3 for working with conda environment.
 - Please follow the steps here: https://coderefinery.github.io/installation/conda/
+- We will inform you during the lessons about Conda repos to use.
 
 ## PlantUML
 - We will use the tool PlantUML to render UML code to graphical diagrams and flowcharts. 
