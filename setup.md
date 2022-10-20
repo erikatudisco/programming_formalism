@@ -59,7 +59,7 @@ https://coderefinery.github.io/installation/ssh/
 ## PlantUML
 - We will use the tool PlantUML to render UML code to grapgical diagrams and flowcharts. 
 - Please install the extension PlantUML viewer to your web browser.
-- When done you should see this:
+- When done you should see the code below as a diagram.
 
 ```plantuml
 @startuml
