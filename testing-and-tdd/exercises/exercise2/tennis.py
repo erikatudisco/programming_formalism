@@ -1,9 +1,6 @@
 class TennisGame:
 
     def __init__(self):
-        self.numberOfBallsWon1 = 0
-        self.numberOfBallsWon2 = 0
-
         self.points1 = 0
         self.points2 = 0
 

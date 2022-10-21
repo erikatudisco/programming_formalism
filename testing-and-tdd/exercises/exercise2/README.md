@@ -11,7 +11,7 @@ Both these methods return the current score.
 There are two sets of unit test for this class - `testsA.py` and `testsB.py`. 
 
 1. Get acquainted with the code - both the production code (`tennis.py`) and the two test files. 
-2. Run the two different test files and make sure all tests pass (run `pytest testA` in the `exercise2` directory) 
+2. Run the two different test files and make sure all tests pass (run `pytest testsA.py` in the `exercise2` directory) 
 3. Looking at the test code, which of the two sets (`testsA.py` and `testsB.py`) is better?
 4. The `TennisGame` class seems to work as intended, but has a some issues.
 For example, it allows a state where both player have _advantage_ - something that is impossible in real life. 
