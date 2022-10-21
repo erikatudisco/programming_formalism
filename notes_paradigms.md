@@ -6,6 +6,7 @@
 ## Spiral model
 
 ## First phase *Risk assessment and Planning*
+ Most models cover some form of risk assesment in thier model
 
 ## Second phase  *Design*
 
@@ -35,10 +36,14 @@ In this course we will present a few methodologies which are in no way or form t
 
 
 ## UML
-The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software enginering). it is by that nature very good att describing the Rational Unified Process (RUP), se below, created by Rumbaugh, Booch and Jacobsen in the late 90s. As we 
+The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software enginering). it is by that nature very good att describing the Rational Unified Process (RUP), se below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintanined by the omg standard development organisation https://www.omg.org/spec/UML/2.5/PDF) 
 
-plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text.
-if the plantuml is not visible
+plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. 
+
+Plantuml vizulaiser is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
+The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward enginering from models to code. There are ofcourse great comersial versions but also some decent free ones.
+draw.io
+https://www.eclipse.org/papyrus/
 
 ```plantuml
 @startuml
@@ -51,7 +56,7 @@ Participant-d->(learn UML from SLIDES)
 ```
 ```plantuml
 @startuml
- !theme amiga
+ !theme _none_
  class01 <|-- class02
  class03 *-- class04
  class05 o-- class06
@@ -71,25 +76,28 @@ Participant-d->(learn UML from SLIDES)
 @startuml
 !theme amiga 
 (*)--> activity1
-if "stuff" then 
+if "stuff?" then 
 -->[true] "action2"
 -r->(*)
 else 
 --> [false](*)
 @enduml
-```
+``` 
+//new style
 ```plantuml
 @startuml
-!theme superhero
+!theme amiga
 start
-if (stuff) then (true) 
+:activity 1;
+-> data;
+if (stuff?) then (true) 
    :action 2;
+else(false)
 endif
-
 stop
 @enduml
 ```
-Unified modeling language came from the Rational group and is a modeling language for describing the
+Unified modeling language is defined and managed by the OMG(obeject management group)(omg.org), which is a standrard developments organisation with 27 countries and more than 230 organisations which produces standards for buissnes development and the software industry. UML is devided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behaviour. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and statemachines are great for describing the flow of a program and to supplement pseudo code when vizualing processes or algorithms.
 
 ## RUP Rational Unified Process
 A method primarily for generating larger object oriented systems. Partially it can be used even for smaller projects but some of the steps and diagrams would be skipped. The design of the system is a use case driven design where the analyst tries to identify all typical interactions that can be done with the systems. This then works as a requirements analysis for the rest of the design step.
