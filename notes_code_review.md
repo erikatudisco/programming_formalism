@@ -9,12 +9,10 @@ style: |
   }
   h1 {
     font-size: 1rem;
-    color: #003300;
     border-bottom: 1px solid #003300;
   }
   h2 {
     font-size: 0.75rem;
-    color: #003300;
   }
 ---
 
