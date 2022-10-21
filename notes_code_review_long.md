@@ -1,8 +1,8 @@
-# Code Review
-
 This material is based on the Code Review lecture by The Carpentries:
 
 > [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Some additions were made to extend the content about Pair Programming.
+
+# Code Review
 
 ## What social obstacles have you encountered in code reviews?
 

@@ -1,22 +1,10 @@
-# Social coding
-
 This material is based on the Social Coding lecture by Code Refinery:
 
-> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Minor changes were made to adjust the content to the layout of this page
+> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
 
-```{objectives}
-- Get an overview of motivations, benefits, but also risks of sharing and reusing code.
-- Learn to identify whether you can use other peoples software.
-```
+# Social coding
 
 ## Discussion/questions/poll: basics of sharing
-
-```{instructor-note}
-These questions 1-4 below can be used as a starting point and copied to the collaborative
-document or form input for an online poll.
-
-Alternatively, they can be discussed in voice or free-form text (discussion box below).
-```
 
 ```{discussion} Social-1: Think about if and how you share
 - Did you ever share your code? If yes, what motivated you? Come up with
@@ -46,15 +34,15 @@ Alternatively, they can be discussed in voice or free-form text (discussion box 
 
 ## Quesion 2: The most concerning thing for me, If I share my software now
 
--A: It will be scooped (stolen) by someone else
--B: It will expose my "ugly code"
--C: Others may find bugs and mistakes. What if the algorithm is wrong?
--D: I will get too many questions, I do not have time for that
--E: Losing control over the direction of the project
--F: Low quality copies will appear
--G: I won't be able to sell this later. Someone else will make money from it
--H: It is too early, I am just prototyping, I will write version to distribute later
--I: Worried about licensing and legal matters, as they are very complicated
+- A: It will be scooped (stolen) by someone else
+- B: It will expose my "ugly code"
+- C: Others may find bugs and mistakes. What if the algorithm is wrong?
+- D: I will get too many questions, I do not have time for that
+- E: Losing control over the direction of the project
+- F: Low quality copies will appear
+- G: I won't be able to sell this later. Someone else will make money from it
+- H: It is too early, I am just prototyping, I will write version to distribute later
+- I: Worried about licensing and legal matters, as they are very complicated
 
 **Choose many**. Vote on Menti.com (code: XYZ)
 
