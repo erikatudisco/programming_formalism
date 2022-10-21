@@ -10,6 +10,8 @@ class TennisGame:
     def player_1_won(self):
         if self.points1 == 'advantage':
             return 'Game player 1'
+        if self.points2 == 'advantage':
+            return 'Deuce'
         if self.points1 == 40 and self.points2 < 40:
             return 'Game player 1'
         if self.points1 == 40 and self.points2 == 40:
@@ -21,6 +23,8 @@ class TennisGame:
     def player_2_won(self):
         if self.points2 == 'advantage':
             return 'Game player 2'
+        if self.points1 == 'advantage':
+            return 'Deuce'
         if self.points2 == 40 and self.points1 < 40:
             return 'Game player 2'
         if self.points1 == 40 and self.points2 == 40:

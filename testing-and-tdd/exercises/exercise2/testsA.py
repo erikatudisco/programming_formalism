@@ -88,6 +88,13 @@ def test_player_one_wins_if_has_advantage_and_wins_ball():
     assert result == 'Game player 1'
 
 
+def test_deuce_if_has_player_has_advantage_and_loses_ball():
+    game = TennisGame()
+    game.points1 = 'advantage'
+    result = game.player_2_won()
+    assert result == 'Deuce'
+
+
 def test_player_two_wins_if_has_40_to_0_and_wins_ball():
     game = TennisGame()
     game.points1 = 0
@@ -143,5 +150,16 @@ def test_40_to_40_is_displayed_deuce():
     assert result == 'Deuce'
 
 
-def test_increment_score():
-    TennisGame.increment_points(0)
+def test_increment_score_from_0():
+    result = TennisGame.increment_points(0)
+    assert result == 15
+
+
+def test_increment_score_from_15():
+    result = TennisGame.increment_points(15)
+    assert result == 30
+
+
+def test_increment_score_from_30():
+    result = TennisGame.increment_points(30)
+    assert result == 40
