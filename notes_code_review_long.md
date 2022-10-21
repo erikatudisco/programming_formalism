@@ -1,24 +1,10 @@
----
-marp: true
-size: 16:9
-paginate: false
-style: |
-  :root {
-    font-family: IBM Plex Sans;
-    color: #003300;
-  }
-  h1 {
-    font-size: 1rem;
-    color: #003300;
-    border-bottom: 1px solid #003300;
-  }
-  h2 {
-    font-size: 0.75rem;
-    color: #003300;
-  }
----
+# Code Review
 
-# What social obstacles have you encountered in code reviews?
+This material is based on the Code Review lecture by The Carpentries:
+
+> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Some additions were made to extend the content about Pair Programming.
+
+## What social obstacles have you encountered in code reviews?
 
 - Conflicts of interest
 - Misunderstandings
@@ -26,15 +12,24 @@ style: |
 - Emotional reactions: code ownership
 - Lack of feedback because of not great psychological safety
 
-# Making code understandable
-
 > The most difficult part of writing code is always to make it understandable to other people, including yourself a few months down the track. There’s certainly no shame in finding out that your code wasn’t as easy to understand or use as you’d hoped, so don’t take it personally when it happens (which it always does, at least in my experience), but treat it as an opportunity to improve.
 >
 > **Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)**
 
----
+A simple objective of the review process is to catch bugs and elementary errors that might have been missed during the development phase.
+Code review can also help improve the overall quality while ensuring that code is readable and easy to understand.
+As a group leader, you can also make sure code is functional and literate as early as possible, and encourage your students to avoid messy "good enough" code that causes chaos later.
 
-# Synchronous - Pair Programming
+Code review is often done in pairs, with each reviewer also having some of their code reviewed by their partner.
+Doing this can help programmers to see and discuss issues and alternative approaches to tasks, and to learn new tips and tricks.
+
+![Garden of code](https://zenodo.org/api/iiif/v2/5c8c70c9-4119-4917-91d1-bc955943f586:328322b3-ab2f-43c8-a4ba-eb6e11d48ac0:reusable-code-garden-with-text.jpg/full/750,/0/default.jpg)
+
+_The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807._
+
+There are different methods for code review.
+
+## Synchronous - Pair Programming
 
 **Helping the student go through their scripts, catch errors and debug side by side**
 
@@ -45,9 +40,7 @@ style: |
 
 The problem with synchronous coding sessions is making time for it and whether or not the supervisor has experience with the specific language.
 
----
-
-# Synchronous - Group Code Tour or Informal Walkthroughs
+## Synchronous - Group Code Tour or Informal Walkthroughs
 
 **Narrating code and software steps**
 
@@ -60,10 +53,8 @@ The researcher may present their pipeline to describe the logical steps using do
 These sessions do not rely on everyone knowing the language, and it is the responsibility of the coder to present their work clearly and logically for everyone to follow.
 Group discussions can be very informative for everyone involved and put the analysis under scrutiny.
 
----
-
-# Suggestions for the meeting leader
-
+> ## Suggestions for the meeting leader
+>
 > - Keep it a safe environment, i.e. make sure chastising is relatively gentle even when deserved (but do point out when code doesn’t meet the required standard – frame it as a learning experience though).
 > - Make sure there’s a core of vocal participants so it isn’t always you.
 > - Make it clear when you’re presenting yourself that your code isn’t perfect, point out some of those imperfections yourself if the audience is slow to do so, and do present yourself.
@@ -71,9 +62,12 @@ Group discussions can be very informative for everyone involved and put the anal
 >
 > _Shared by Rob Knight with Fernando Perez in the post [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)_
 
----
+## Asynchronous - I'll get back to you on that
 
-# Asynchronous - I'll get back to you on that
+Making sure everyone is free at the same time for a lab meeting can be challenging.
+Hence, asynchronous code review practices are more suitable for busy supervisors or collaborators in different time zones.
+
+The asynchronous review process allows others to run the code themselves using a reproducible environment, or simply reads through the scripts and share their feedback asynchronously.
 
 Consider a scenario:
 
@@ -82,13 +76,26 @@ Consider a scenario:
 > The supervisor can then run the code herself to review it and check the individual parts over the next week.
 > The supervisor adds a commented version of the script to the postdoc's repo with a merge request.
 
----
+Reviewing code in small chunks incrementally as the project is developing can help make the code review process a lot more efficient.
+Asynchronous feedback removes the time pressure but can be easily forgotten!
 
-# Multiple people can also review the code asynchronously.
+> Reviewing more than 400 lines of code (LoC) can have an adverse impact on your ability to find bugs, and in fact, most are found in the first 200 lines. - Recommendation from Code Review at Cisco Systems
+>
+> **[5 code review best practices. Work Life by Atlassian](https://www.atlassian.com/blog/add-ons/code-review-best-practices**), Usman Ghani\*\*
 
+## Multiple people can also review the code asynchronously.
+
+> [Turing Way: Recommendations for Code Reviewing](https://the-turing-way.netlify.app/reproducible-research/reviewing/reviewing-recommend.html)
+>
 > Unlike traditional, “academic-style” peer review, most code review systems have several advantages: they’re rarely anonymous, they’re public-facing, and without the broker of an editor, contact between reviewer and reviewee can be direct and rapid.
 > This means code review is typically a fast, flexible, and interactive process.
 
+> ## Github features to help with code review (Click to see)
+>
+> **Commit changes**: uploading snapshots when the code changes. The history of all changes are therefore saved and can be reverted.
+>
+> <img src="https://i.postimg.cc/MHm8X1zX/Screenshot-2022-02-10-at-16-35-50.png" alt="drawing" width="600"/>
+>
 > **Branching**: keep a version of the code separate while making experimental changes or keeping track of collaborative work. Can try out new functionality or edit in parallel without impacting the code base.
 >
 > <img src="https://i.postimg.cc/6p5v0Nb1/Screenshot-2022-02-10-at-18-52-47.png" alt="drawing" width="200"/>
@@ -103,9 +110,7 @@ Consider a scenario:
 >
 > **Author: Lydia France (Junior Data Scientist, The Alan Turing Institute, UK)**
 
----
-
-# Reviewing is not about creating more work, nor the PI rewriting everything
+## Reviewing is not about creating more work, nor the PI rewriting everything
 
 Instead, it is just another part of peer review and accountability within the scientific process.
 It is also an opportunity for everyone to learn better practices from each other, and solve issues that have plagued one person for weeks!
@@ -125,9 +130,7 @@ It is also an opportunity for everyone to learn better practices from each other
 
 For further considerations in code review, please read [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) chapter in _The Turing Way_.
 
----
-
-# What to look for during Code Review
+## What to look for during Code Review
 
 <img src="https://the-turing-way.netlify.app/_images/readable-code.jpg" alt="drawing" width="400"/>
 
@@ -159,9 +162,7 @@ These are very common, everyone does this.
 
 *Modified from [*What to look for when code reviewing*](https://www.cs.swarthmore.edu/~alinen/cs71/labs/lab03.html)*
 
----
-
-# Benefits of Code Review
+## Benefits of Code Review
 
 > In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews.
 > The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code.
@@ -170,12 +171,10 @@ These are very common, everyone does this.
 > **[Code Complete](https://www.oreilly.com/library/view/code-complete-2nd/0735619670) by Steve McConnell**
 
 The main benefit is finding problems, and finding them early enough that there aren't frustrating consequences.
-The penalty for finding a bug once all the figures have been produced and conclusions drawn, or, worst-case scenario, after a publication, is much higher than the penalty for taking the time to revie
+The penalty for finding a bug once all the figures have been produced and conclusions drawn, or, worst-case scenario, after a publication, is much higher than the penalty for taking the time to review.
 
----
-
-# Writing code collaboratively also benefit directly your team members:
-
+> ## Writing code collaboratively also benefit directly your team members:
+>
 > - Less time redoing work or refactoring
 > - Increased productivity
 > - Greater confidence in own work
@@ -183,10 +182,8 @@ The penalty for finding a bug once all the figures have been produced and conclu
 > - Reduced time debugging alone
 > - Knowledge exchange and group cohesion
 
----
-
-# For a group leader, the benefits include:
-
+> ## For a group leader, the benefits include:
+>
 > - Better understanding of the projects
 > - More maintainable and better-documented code that is easy to understand and modify
 > - Better insight into any problems with data
@@ -194,8 +191,6 @@ The penalty for finding a bug once all the figures have been produced and conclu
 > - Group reviews reduce the work burden
 > - More robust analysis pipelines that can be reused and modified
 > - High-quality code that can be released
-
----
 
 **Important things to bear in mind:**
 
@@ -213,9 +208,7 @@ If your work isn’t reviewed until you think it’s complete, you are psycholog
 
 If the program runs, how bad can it be? You are likely to rationalise away possible bugs because you believe you’ve finished and you’re eager to move on to the next task. Relying on your own desk checking and unit testing ignores the greater efficiency of a peer review for finding many defects\*
 
----
-
-# Group Code Writing
+## Group Code Writing
 
 As well as reviewing specific scripts and analyses written by a single individual, can be very beneficial to solving programming problems as a team.
 Setting aside an afternoon to work as a group will help teach less experienced members of the group and more efficiently solve very difficult problems.
@@ -230,19 +223,12 @@ Having regularly updated documentation also reduces onboarding time for new memb
 
 Group work shares the burden and allows knowledge exchange and support within the team.
 
----
+## References
 
-# References
+- _The Turing Way_ Community. (2021). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.1). Zenodo. https://doi.org/10.5281/zenodo.5671094. [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) Chapter.
+- Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)
 
-This material is based on the Code Review lecture by The Carpentries:
-
-> - [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Some additions were made to extend the content about Pair Programming.
-> - _The Turing Way_ Community. (2021). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.1). Zenodo. https://doi.org/10.5281/zenodo.5671094. [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) Chapter.
-> - Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)
-
----
-
-# Exercise: pair programming
+## Exercise: pair programming
 
 In this exercise you will try out pair programming from the two different roles: driver and navigator.
 
@@ -256,8 +242,6 @@ In this task you will have to:
 3. Work in pairs and try to code the [Tribonacci function](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers)
    > The tribonacci numbers are like the Fibonacci numbers, but instead of starting with two predetermined terms, the sequence starts with three predetermined terms and each term afterwards is the sum of the preceding three terms.
 
----
-
-# Exercise: reviewing each other's code
+## Exercise: reviewing each other's code
 
 Take the code produced by one of the group in the previous exercise and write a formal code review following the [NBIS code development guidelines](https://github.com/NBISweden/development-guidelines). Share your review with the authors and discuss. Take into consideration the NBIS guidelines when writing reviews.

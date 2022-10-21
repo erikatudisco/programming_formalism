@@ -1,24 +1,72 @@
----
-marp: true
-size: 16:9
-paginate: false
-style: |
-  :root {
-    font-family: IBM Plex Sans;
-    color: #003300;
-  }
-  h1 {
-    font-size: 1rem;
-    color: #003300;
-    border-bottom: 1px solid #003300;
-  }
-  h2 {
-    font-size: 0.75rem;
-    color: #003300;
-  }
----
+# Social coding
 
-# Comparing sharing papers and sharing code
+This material is based on the Social Coding lecture by Code Refinery:
+
+> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Minor changes were made to adjust the content to the layout of this page
+
+```{objectives}
+- Get an overview of motivations, benefits, but also risks of sharing and reusing code.
+- Learn to identify whether you can use other peoples software.
+```
+
+## Discussion/questions/poll: basics of sharing
+
+```{instructor-note}
+These questions 1-4 below can be used as a starting point and copied to the collaborative
+document or form input for an online poll.
+
+Alternatively, they can be discussed in voice or free-form text (discussion box below).
+```
+
+```{discussion} Social-1: Think about if and how you share
+- Did you ever share your code? If yes, what motivated you? Come up with
+  **reasons for sharing** your scripts/code/data.
+- Also think about **reasons for not sharing**.
+```
+
+## Question 1: Why would I want to share my scripts/code/data?
+
+- A: Easier to find and reproduce (scientific reproducibility)
+- B: More trustworthy: others can verify correctness and find and report bugs
+- C: Enables others to build on top of your code
+  (derivative work, provided the license allows it)
+- D: Others can submit features/improvements
+- E: Others can help fixing bugs
+- F: Many tools and apps are free for open source, so no financial cost for this
+  (GitHub, GitLab, Appveyor, Read the Docs)
+- G: Good for your CV: you can show what you have built
+- H: Discourages competitors. If others can't build on your work,
+  they will make competing work
+- I: When publicly shared, usually we timestamp or set a version,
+  so it is easier to refer to a specific version
+- J: You can reuse your own code later after change of job or affiliation
+- K: It encourages me to code properly from the start
+
+**Choose many**. Vote on Menti.com (code: XYZ)
+
+## Quesion 2: The most concerning thing for me, If I share my software now
+
+-A: It will be scooped (stolen) by someone else
+-B: It will expose my "ugly code"
+-C: Others may find bugs and mistakes. What if the algorithm is wrong?
+-D: I will get too many questions, I do not have time for that
+-E: Losing control over the direction of the project
+-F: Low quality copies will appear
+-G: I won't be able to sell this later. Someone else will make money from it
+-H: It is too early, I am just prototyping, I will write version to distribute later
+-I: Worried about licensing and legal matters, as they are very complicated
+
+**Choose many**. Vote on Menti.com (code: XYZ)
+
+## Question 3: Why is software often treated differently from papers?
+
+**Free-form answers**. Vote on Menti.com (code: XYZ)
+
+## Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?
+
+**Free-form answers**. Vote on Menti.com (code: XYZ)
+
+## Comparing sharing papers and sharing code
 
 <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
 
@@ -40,9 +88,7 @@ Sharing code:
 - Sharing code and encouraging _derivative work_ may boost your academic impact.
 - But will your work be visible if it is used two levels deep down?
 
----
-
-# Journal policies as motivation for sharing
+## Journal policies as motivation for sharing
 
 From [Science editorial policy](https://www.sciencemag.org/authors/science-journals-editorial-policies):
 
@@ -72,17 +118,13 @@ includes samples of charming author responses such as:
 > who you are, whom you work for, why you need the data and what you are going
 > to do with it."
 
----
-
-# Benefits of sharing software
+## Benefits of sharing software
 
 ```{instructor-note}
 We revisit answers to question 1 (above).
 ```
 
----
-
-# Motivation for open source software
+## Motivation for open source software
 
 - Enable derivative work
 - Do not lock yourself out of own code
@@ -91,9 +133,7 @@ We revisit answers to question 1 (above).
 - Open-source software (OSS) can lead to more engagement from industry which may lead to more impact
 - If it's not open, it is not likely to become standard
 
----
-
-# Sharing software is also scary
+## Sharing software is also scary
 
 - **Fear of being scooped**
   > A license can avoid it, and you can release when you are ready. Anyway, it is
@@ -128,9 +168,7 @@ We revisit answers to question 1 (above).
   Public: The Making and Maintenance of Open Source Software (Stripe Press)"
 ```
 
----
-
-# Code reusability
+## Code reusability
 
 Should you reuse things that others have done?
 
@@ -144,9 +182,7 @@ Types of things that can be reused:
 Do you want others to reuse what you make?
 How do you turn your own small project into the next NumPy? Do you want to?
 
----
-
-# What contributes to reusability?
+### What contributes to reusability?
 
 What contributes to you being able to reuse stuff that others make, and others
 (or you) being able to reuse your stuff? When you find a repository with code
@@ -181,9 +217,7 @@ This can be now reconnected to question 4 (above).
 ... most of which you have or will learn during this
 [CodeRefinery](https://coderefinery.org) workshop!
 
----
-
-# Sharing or not sharing?
+## Sharing or not sharing?
 
 <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/in-out.jpg?raw=true" alt="Our work depends on ideas, articles, data, and software" width="600"/>
 
@@ -194,11 +228,3 @@ This can be now reconnected to question 4 (above).
 - A repository that is private today might become public one day.
 - Sometimes "OTHERS" are you yourself in the future in a different group/job.
 - **Software licenses** matter. And this is what we will discuss in the next episode.
-
----
-
-# References
-
-This material is based on the Social Coding lecture by Code Refinery:
-
-> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Minor changes were made to adjust the content to the layout of this page
