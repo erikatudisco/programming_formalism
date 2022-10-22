@@ -53,7 +53,7 @@ https://coderefinery.github.io/installation/github/
 https://coderefinery.github.io/installation/ssh/
 
 - Test: `ssh -T git@github.com`
-- If not working, these are the approximate steps to be done in your terminal.
+- If not working, these are the approximate steps to be done in your terminal. It can vary between systems, so link above is more certain.
 ```console
 ssh-keygen -t ed25519 -C "email address"
 eval "$(ssh-agent -s)"
