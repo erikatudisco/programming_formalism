@@ -52,6 +52,16 @@ https://coderefinery.github.io/installation/github/
 ## Git/Github connection through ssh keys (This may take a while to get working, but is worth it)
 https://coderefinery.github.io/installation/ssh/
 
+- Test: `ssh -T git@github.com`
+- If not working, these are the approximate steps to be done in your terminal. It can vary between systems, so link above is more certain.
+```console
+ssh-keygen -t ed25519 -C "email address"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+- [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+
 ## Miniconda3
 - We encourage you to use miniconda3 for working with conda environment.
 - Please follow the steps here: https://coderefinery.github.io/installation/conda/
