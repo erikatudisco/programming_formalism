@@ -2,5 +2,11 @@ from reverse_string import reverse_string
 
 
 def test_reverse():
-    result = reverse_string('paris')
+    # Arrange - set up the test case
+    s = 'paris'
+
+    # Act - perform the action we are testing
+    result = reverse_string(s)
+
+    # Assert - check that the action performed correctly
     assert result == 'sirap'
