@@ -47,12 +47,44 @@ The focus of the spiral model is to identify risk
    <font>image contributated from  Wikimedia Commons and was originaly made Jakob Farian Krarup and released to the public domain under cc 0
 
 ### Inception
+ The focus of the inception stage is to identify the user needs to initial uscase development 
+- The purpose of the project
+- The scheduled time frame for its completion
+- The resources required for its completion
+- The success criteria
+- The estimated cost, and
+- The estimated risk assessment, among others
+
+ By the end of the Inception phase you should have determined the following:
+- The General vison of the project
+- The Project Plan and goal
+- The Project scope
+- Inital buissnes suit from finacial anlaysis, could be replaced by the scientific motivation, proposal for the project.
+- Requirments understanding, through use case design.
+
 ### Elaboration
 The elaboration phase is focused on the refinment of requirments the design of the software and test that are to be run throught the project iteration lifetime.
+Deliverables of the Elaboration phase is:
+- A full model with functional and non-functional requirements
+- A complete software architecture description
+- A stable project plan
+- Actual resource cost versus planned resource cost, etc.
+
 ### Construction
 Is the development of the software and the creation of the deployment modules that are needed
+Deliverables are:
+- A user manual
+- A fully completed software system
+
 ### Transition
-The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects tansitions in the organisation might bring on future oragnistation the requirements gathereing is commonly extracted from bug reports, design is almost never changed during the transition phase whil Testing and deployment have mayor focus in this phase. 
+The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects tansitions in the organisation might bring on future oragnistation the requirements gathereing is commonly extracted from bug reports, design is almost never changed during the transition phase whil Testing and deployment have mayor focus in this phase.
+Deliverables:
+- Beta testing execution(firs iteration only)
+- Marketing and distributing of the product
+- User training
+- Converting existing data
+- Assessments based on user experience
+
 ## RAD Rapid Application Development
 Using Protoyping and minimal design to generate fast development cycles, this has the disadvantage to generating very little structure and for larger or more complex systems the risk of deraling projects or unmaintainable solutions are high.
 
@@ -74,6 +106,7 @@ Using Protoyping and minimal design to generate fast development cycles, this ha
 
 futher reading:
 https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
+
 ## TDD Test Driven Development
 TDD will be covered in detail elsewhere, but the genreal idea of TDD is to generate roubust solutions through the use of test for the whole life cycle.
 
@@ -120,20 +153,30 @@ This manifesto was first concived at the Snowbird meeting in Utah in early 2001
 # Paradigms of design
 
 ## Structural programming, Structured design
-   ### imperative programming
-   ### procedural programming
-   ### Functional programming
- In functional programming, based of the lambda caclulus of Alonzo Church during the 1930s, the idea of pure functions, are meant to have no side effects is implemented as a design strategy, the secon concept that needs to be implemented is the concept of recursion which functions as the mechanism of iteration in functional programming
-   programming languages like haskell, LISP, IPL are languges that represent languages that implement the functional paradigm to varying degrees, but as most design paradigms any language that allows for recursive high order functions will allow for functional programming.
+### Imperative programming
+Imperative programming is a software development paradigm where functions are implicitly coded in every step required to solve a problem. In imperative programming, every operation is coded and the code itself specifies how the problem is to be solved, which means that pre-coded models are not called on.
+
+Imperative programming requires an understanding of the functions necessary to solve a problem, rather than a reliance on models that are able to solve it. The focus of imperative programming is how the problem should be solved, which requires a detailed step-by-step guide. Because the written code performs the functions instead of models, the programmer must code each step.
+(https://www.techtarget.com/whatis/definition/imperative-programming)
+### procedural programming
+Derived from Imperative programming, the basic concept of a procedure call where a procedure is a routine or subroutine which contains the computational steps to be carried out.
+
+### Functional programming
+In functional programming, based of the lambda caclulus of Alonzo Church during the 1930s, the idea of pure functions, are meant to have no side effects is implemented as a design strategy, the secon concept that needs to be implemented is the concept of recursion which functions as the mechanism of iteration in functional programming.
+
+Programming languages like Haskell, LISP, IPL are languges that represent languages that implement the functional paradigm to varying degrees, but as most design paradigms any language that allows for recursive high order functions will allow for functional programming.
 ## Declarative programming
-
+A problem is solved is not specifically defined, but instead focuses on what needs to be solved. Declarative programming provides a constant to check to ensure the problem is solved correctly, but does not provide instructions on how to solve the problem. The exact manner in which the problem is solved is defined by the programming language’s implementation through models. Declarative programming is also called model-based programming. Functional, domain-specific (DSL) and logical programming languages fit under declarative programming, such as SQL, HTML, XML and CSS.
+(https://www.techtarget.com/whatis/definition/imperative-programming)
 ## Object Orientation
- An object is the representation of a thing or concept, that encapsulates both data and the actions perfomed on it. A key concept of an object is that it interactact with the world through message passing of its parameters. 
- * The concept of Information Hiding 
- * The concept of Encapsulation
- * The concept of message passing
+Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declartive programming which focuses on how you code. One can use any number of programming paradigms to implement the objectorieted design.
 
- Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstact a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. Thes classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are gennerally instanciated as objects again which are the interacting entities of our software. 
+An object is the representation of a thing or concept, that encapsulates both data and the actions perfomed on it. A key concept of an object is that it interactact with the world through message passing of its parameters. 
+* The concept of Information Hiding 
+* The concept of Encapsulation
+* The concept of message passing
+
+Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstact a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. Thes classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are gennerally instanciated as objects again which are the interacting entities of our software. 
 
 # Tools and methodologies  
 The tools and methodologies are too numerous to describe in any complete way,<rewrite> and they are always evolving as developers find issues with the models and methodologies they are currently using and trying to adress them there for many models evolve to adress the "lates and greates" method but as on be can guess this means other consessions have to be made. 
@@ -141,7 +184,6 @@ The tools and methodologies are too numerous to describe in any complete way,<re
 The best way to aproach wich methodology one should use is to look at the development requirements of the system that you wish to create and choose the one that lets you do the least amount of work for the highest value. 
 
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
-
 
 ## UML
 The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software enginering). it is by that nature very good att describing the Rational Unified Process (RUP), se below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintanined by the omg standard development organisation https://www.omg.org/spec/UML/2.5/PDF) 
@@ -211,3 +253,4 @@ Unified modeling language is defined and managed by the OMG(obeject management g
  A tool for rapid development is the so called Pair Programming where two developers code on the same code simultatiously one as the "Driver" and one as the "Navigator" 
 
  ## Design Patterns
+  A design pattern is a collection of bestpractises to solve a given design problem. Such as window managent on your computer. 
