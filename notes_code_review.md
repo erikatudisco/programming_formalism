@@ -16,13 +16,15 @@ style: |
   }
 ---
 
-# What social obstacles have you encountered in code reviews?
+# What obstacles can we encounter in Code Reviews?
 
 - Conflicts of interest
-- Misunderstandings
-- Misinterpretations
-- Emotional reactions: code ownership
-- Lack of feedback because of not great psychological safety
+- Strong personal views about non crucial matters
+- Misunderstandings and/or misinterpretations
+- Code ownership
+- Psychological safety
+
+---
 
 # Making code understandable
 
@@ -55,19 +57,14 @@ The researcher may present their pipeline to describe the logical steps using do
 - The lines of code are shown for those in the meeting that know R, but the postdoc explains the steps verbally as well for those who don't understand R.
 - The group discuss and provides comments on the choices and order of the analysis pipeline, a PhD student notices a jump in logic that wasn't picked up previously, and an advanced R user in the lab makes suggestions about making some parts run faster.
 
-These sessions do not rely on everyone knowing the language, and it is the responsibility of the coder to present their work clearly and logically for everyone to follow.
-Group discussions can be very informative for everyone involved and put the analysis under scrutiny.
-
 ---
 
 # Suggestions for the meeting leader
 
-> - Keep it a safe environment, i.e. make sure chastising is relatively gentle even when deserved (but do point out when code doesn’t meet the required standard – frame it as a learning experience though).
-> - Make sure there’s a core of vocal participants so it isn’t always you.
-> - Make it clear when you’re presenting yourself that your code isn’t perfect, point out some of those imperfections yourself if the audience is slow to do so, and do present yourself.
-> - Patiently explain when things are not wrong but just stylistic differences (but make it clear that some styles are bad, often helpful e.g. asking people to guess what a function returns from its name).
->
-> _Shared by Rob Knight with Fernando Perez in the post [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)_
+> - Keep it a safe environment
+> - Facilitate participation in the session
+> - Make it clear that your code isn’t perfect
+> - Patiently explain when things are not wrong but just not ideal
 
 ---
 
@@ -85,21 +82,24 @@ Consider a scenario:
 # Multiple people can also review the code asynchronously.
 
 > Unlike traditional, “academic-style” peer review, most code review systems have several advantages: they’re rarely anonymous, they’re public-facing, and without the broker of an editor, contact between reviewer and reviewee can be direct and rapid.
+
 > This means code review is typically a fast, flexible, and interactive process.
 
-> **Branching**: keep a version of the code separate while making experimental changes or keeping track of collaborative work. Can try out new functionality or edit in parallel without impacting the code base.
->
-> <img src="https://i.postimg.cc/6p5v0Nb1/Screenshot-2022-02-10-at-18-52-47.png" alt="drawing" width="200"/>
->
-> **Pull Request**: Bring the changes made on a branch over to the main code base. Can be used to request a code review (see Reviewers on the right panel)
->
-> <img src="https://i.postimg.cc/5tgv5Rpm/Screenshot-2022-02-10-at-18-44-07.png" alt="drawing" width="600"/>
->
-> **Review**: A pull request can be reviewed and commented on.
->
-> <img src="https://i.postimg.cc/9XDbVyWQ/Screenshot-2022-02-10-at-19-11-58.png" alt="drawing" width="400"/>
->
-> **Author: Lydia France (Junior Data Scientist, The Alan Turing Institute, UK)**
+---
+
+# Branching
+
+> **Branching**: keep a version of the code separate while making experimental changes or keeping track of collaborative work.
+
+<img src="https://i.postimg.cc/6p5v0Nb1/Screenshot-2022-02-10-at-18-52-47.png" alt="drawing" height="70%" style="display: block; margin: 0 auto" />
+
+---
+
+# Pull Requests
+
+> **Pull Request**: a code review request prior to merging the changes made on a branch over to the main branch.
+
+<img src="https://i.postimg.cc/5tgv5Rpm/Screenshot-2022-02-10-at-18-44-07.png" alt="drawing" height="70%" style="display: block; margin: 0 auto" />
 
 ---
 
@@ -108,32 +108,19 @@ Consider a scenario:
 Instead, it is just another part of peer review and accountability within the scientific process.
 It is also an opportunity for everyone to learn better practices from each other, and solve issues that have plagued one person for weeks!
 
-> _Scientists are very aware that their understanding of code dissipates over time and that this is a large hidden cost. Equally, they suspect that they spend a lot of time reinventing wheels.
-> They may not know how code review will help with that, but they hope that it will._
->
-> _One of the mentors expected scientists to overhaul complete code bases. The advice from one mentor was cogent: if you check the docstring and write a test every time you touch a method, the code improvements will accumulate over time with minimal effort._
->
-> _Someone who isn’t intimately involved with your project should understand from the module documentation and the comments what you are trying to do, what approach you’re taking, and why they should expect it to work._
->
-> _Take some time to prepare a presentation about your code that will answer the above questions even for someone who hasn’t read the code. You’re more likely to get useful feedback, rather than nitpicking about syntax, if the audience can see the big picture._
->
-> _Keep it a safe environment, i.e. make sure chastising is relatively gentle even when deserved (but do point out when code doesn’t meet the required standard – frame it as a learning experience though)._
->
-> **_Marian Petre and Greg Wilson. "Code review for and by scientists: preliminary findings." (2014)._**
-
 For further considerations in code review, please read [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) chapter in _The Turing Way_.
 
 ---
 
-# What to look for during Code Review
+# Who should do a Code Review?
 
-<img src="https://the-turing-way.netlify.app/_images/readable-code.jpg" alt="drawing" width="400"/>
+> "Anyone" should be able to perform code reviews.
 
-Reviewing code makes a big difference. Knowledge of the language is not always necessary!
+<img src="https://the-turing-way.netlify.app/_images/readable-code.jpg" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
 
-These are very common, everyone does this.
+---
 
-**Bugs/Potential bugs**
+# What to look for during Code Review? - Bugs
 
 - Repetitive code
 - Code saying one thing, documentation saying another
@@ -142,7 +129,9 @@ These are very common, everyone does this.
 - Lack of tests and sanity checks for what different parts are doing
 - Magic numbers (a number hardcoded in the script)
 
-**Unclear, messy code**
+---
+
+# What to look for during Code Review? - Unclear code
 
 - Bad variable/method names
 - Inconsistent indentation
@@ -150,7 +139,9 @@ These are very common, everyone does this.
 - Too much on one line
 - Lack of comments and signposting
 
-**Fragile and non-reusable code**
+---
+
+# What to look for during Code Review? - Reusability
 
 - Tailor-made and manual steps
 - Only works with the given data
@@ -168,7 +159,6 @@ These are very common, everyone does this.
 > **[Code Complete](https://www.oreilly.com/library/view/code-complete-2nd/0735619670) by Steve McConnell**
 
 The main benefit is finding problems, and finding them early enough that there aren't frustrating consequences.
-The penalty for finding a bug once all the figures have been produced and conclusions drawn, or, worst-case scenario, after a publication, is much higher than the penalty for taking the time to revie
 
 ---
 
@@ -197,36 +187,21 @@ The penalty for finding a bug once all the figures have been produced and conclu
 
 **Important things to bear in mind:**
 
-Code reviews should not be used to evaluate individuals and their skill levels.
-An open and safe environment where revealing mistakes and errors should not come with penalties or shame.
-Code reviews should also be done early and often, to normalise this practice in the research team.
-
-In their book **Peer Reviews in Software: A Practical Guide**, Karl E. Wiegers says:
-
-_The temptation to perfect the product before you allow another pair of eyes to see it.
-This is an ego-protecting strategy: you won’t feel embarrassed about your mistakes if no one else sees them.
-...review [is not] a seal of approval but rather in-process quality-improvement activity.
-Such reluctance has several unfortunate consequences.
-If your work isn’t reviewed until you think it’s complete, you are psychologically resistant to suggestions for changes._
-
-If the program runs, how bad can it be? You are likely to rationalise away possible bugs because you believe you’ve finished and you’re eager to move on to the next task. Relying on your own desk checking and unit testing ignores the greater efficiency of a peer review for finding many defects\*
+- Code reviews should not be used to evaluate individuals and their skill levels.
+- An open and safe environment where revealing mistakes and errors should not come with penalties or shame.
+- Code reviews should also be done early and often, to normalise this practice in the research team.
 
 ---
 
 # Group Code Writing
 
-As well as reviewing specific scripts and analyses written by a single individual, can be very beneficial to solving programming problems as a team.
-Setting aside an afternoon to work as a group will help teach less experienced members of the group and more efficiently solve very difficult problems.
+- To work as a group will help teach less experienced members of the group and more efficiently solve very difficult problems.
 
-Groups of people working on a specific problem are often known as "Hackathons" in programming.
-These can last multiple days (hopefully with downtime!). With very large groups, people can work in pairs or small groups with delegated parts of the problem to solve and regularly meet back together to discuss and evaluate.
-If there is a complex solution in computational methods that most people in the group need, it makes sense to find it together.
+- If there is a complex solution in computational methods that most people in the group need, it makes sense to find it together.
 
-Similarly, documentation sprints are useful to dedicate time to regularly bring a codebase to a good minimum standard.
-Splitting the task across the team as an event, creating documentation and working examples for code repos and releasing it can help others use your computational methods and tools to increase the impact of your work.
-Having regularly updated documentation also reduces onboarding time for new members picking up the shared methods in the lab.
+- Regular documentation updates are useful to dedicate time to regularly bring a codebase to a good minimum standard.
 
-Group work shares the burden and allows knowledge exchange and support within the team.
+- Faster onboarding of members and greater impact of your work
 
 ---
 
