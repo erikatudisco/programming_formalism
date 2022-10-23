@@ -6,5 +6,8 @@ The file `test.py` contains a unit test.
 2. Run the test
     1. Move to the `exercise1` directory 
    2. Install pytest: `pip install -U pytest`
-   2. Run the test: `pytest test.py` 
-3. (optional) If you are used to an IDE (such as VS Code, PyCharm or similar) open the code and try to run the test from within the IDE.  
+   3. Run the test: `pytest test.py` 
+3. Wreck the code that is tested (the function `reverse_string` in `reverse_string_py`), for example by letting it return `None`
+4. Run the test again: `pytest test.py`. What happens?
+5. Restore the test and make sure the test passes again
+6. (optional) If you normally use an IDE (such as VS Code, PyCharm or similar) open the code there and try to run the test from within the IDE.  
