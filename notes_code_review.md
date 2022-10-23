@@ -8,21 +8,21 @@ style: |
     color: #003300;
   }
   h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-bottom: 1px solid #003300;
   }
   h2 {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 ---
 
-# What obstacles can we encounter in Code Reviews?
+<style scoped>
+p {
+  font-size: 80px;
+}
+</style>
 
-- Conflicts of interest
-- Strong personal views about non crucial matters
-- Misunderstandings and/or misinterpretations
-- Code ownership
-- Psychological safety
+> What is code reviewing and how can it improve our code?
 
 ---
 
@@ -193,6 +193,16 @@ The main benefit is finding problems, and finding them early enough that there a
 
 ---
 
+# What obstacles can we encounter in Code Reviews?
+
+- Conflicts of interest
+- Strong personal views about non crucial matters
+- Misunderstandings and/or misinterpretations
+- Code ownership
+- Psychological safety
+
+---
+
 # Group Code Writing
 
 - To work as a group will help teach less experienced members of the group and more efficiently solve very difficult problems.
@@ -221,13 +231,14 @@ In this exercise you will try out pair programming from the two different roles:
 
 In this task you will have to:
 
-1. Work in pairs and try to code the [Fibonacci function](https://en.wikipedia.org/wiki/Fibonacci_number)
+1. Work in pairs and try to code the [Fibonacci function](https://en.wikipedia.org/wiki/Fibonacci_number) or other function that the instructors will suggest.
 
 > In mathematics, the Fibonacci numbers, commonly denoted Fn , form a sequence, the Fibonacci sequence, in which each number is the sum of the two preceding ones.
 
 2. Switch navigator/driver roles
-3. Work in pairs and try to code the [Tribonacci function](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers)
-   > The tribonacci numbers are like the Fibonacci numbers, but instead of starting with two predetermined terms, the sequence starts with three predetermined terms and each term afterwards is the sum of the preceding three terms.
+3. Work in pairs and try to code the [Tribonacci function](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers) or other function that the instructors will suggest.
+
+> The tribonacci numbers are like the Fibonacci numbers, but instead of starting with two predetermined terms, the sequence starts with three predetermined terms and each term afterwards is the sum of the preceding three terms.
 
 ---
 

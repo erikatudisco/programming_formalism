@@ -8,13 +8,21 @@ style: |
     color: #003300;
   }
   h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-bottom: 1px solid #003300;
   }
   h2 {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 ---
+
+<style scoped>
+p {
+  font-size: 80px;
+}
+</style>
+
+> Why bother about sharing our code?
 
 # Comparing sharing papers and sharing code
 
