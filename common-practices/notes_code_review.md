@@ -38,12 +38,44 @@ p {
 
 **Helping the student go through their scripts, catch errors and debug side by side**
 
-- The PI sits down with her PhD student who has been writing a function for cleaning bioinformatics data.
-- The PI knows Python well and takes the opportunity to discuss code while helping their student organise the code better.
-- The student shows the PI some odd errors and so they run some tests with expected outcomes to find what the problem is and solve it.
-- The PhD student learns and applies to test practices to help make code robust.
+- The PI sits down with her student who has been writing some code
+- They discuss how the code could better.
+- The student shows the PI some issues and they manage to solve it.
+- The PhD student learns and makes the code more robust
 
-The problem with synchronous coding sessions is making time for it and whether or not the supervisor has experience with the specific language.
+---
+
+# Pair Programming - Driver and Navigator
+
+<img src="https://martinfowler.com/articles/on-pair-programming/driver_navigator.png" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
+
+---
+
+# Pair Programming - Ping Pong
+
+<img src="https://martinfowler.com/articles/on-pair-programming/ping_pong.png" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
+
+---
+
+# Pair Programming - Strong-Style Pairing
+
+<img src="https://www.thekguy.com/wp-content/uploads/2017/06/StrongStylePairing-1-1024x324.png" alt="drawing" height="75%" width="70%" style="display: block; margin: 0 auto">
+
+---
+
+# Pair Programming - Benefits and challenges
+
+## Benefits
+
+- We can produce better code working together
+- We will ship fast for a longer time
+- We build a "default" collaborative workflow in the group
+- Less interruptions and happier people
+- Recovering the flow becomes easier
+
+## Challenges
+
+- ??
 
 ---
 
@@ -222,3 +254,4 @@ This material is based on the Code Review lecture by The Carpentries:
 > - [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
 > - _The Turing Way_ Community. (2021). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.1). Zenodo. https://doi.org/10.5281/zenodo.5671094. [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) Chapter.
 > - Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)
+> - Martin Fowler, [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
