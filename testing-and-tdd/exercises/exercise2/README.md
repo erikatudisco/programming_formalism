@@ -1,4 +1,4 @@
-# Testing and TDD - exercise 2
+# Exercise 2 - Tennis
 
 The file `tennis.py` contains a class `TennisGame` which is used to keep track of the score in a tennis game.
 Tennis has a quite peculiar scoring system (see [wikipedia](https://en.wikipedia.org/wiki/Tennis#Scoring) 
@@ -22,8 +22,8 @@ to something like
 class TennisGame:
 
     def __init__(self):
-        self.numberOfBallsWon1 = 0
-        self.numberOfBallsWon2 = 0
+        self.__numberOfBallsWon1 = 0
+        self.__numberOfBallsWon2 = 0
 ```
 
 and the code accordingly. What happens to the tests if you do this? 
