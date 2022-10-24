@@ -24,6 +24,8 @@ p {
 
 > Why bother about sharing our code?
 
+---
+
 # Comparing sharing papers and sharing code
 
 <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=tru" width="800" height="600" style="display: block; margin: 0 auto" />
