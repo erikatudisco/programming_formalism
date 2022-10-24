@@ -59,7 +59,7 @@ p {
 
 # Pair Programming - Strong-Style Pairing
 
-<img src="https://www.thekguy.com/wp-content/uploads/2017/06/StrongStylePairing-1-1024x324.png" alt="drawing" height="75%" width="70%" style="display: block; margin: 0 auto">
+<img src="https://www.thekguy.com/wp-content/uploads/2017/06/StrongStylePairing-1-1024x324.png" alt="drawing" height="75%" width="90%" style="display: block; margin: 0 auto">
 
 ---
 
@@ -79,24 +79,30 @@ p {
 
 ---
 
+# Pair Programming - The Pomodoro technique
+
+<img src="https://martinfowler.com/articles/on-pair-programming/pomodoro.png" alt="drawing" height="75%" width="50%" style="display: block; margin: 0 auto">
+
+---
+
 # Synchronous - Group Code Tour or Informal Walkthroughs
 
 **Narrating code and software steps**
 
 The researcher may present their pipeline to describe the logical steps using documentation, pseudocode, or describing how to run the code.
 
-- A postdoc has been working on some analysis that provides statistics results that he hopes to publish soon. During a lab meeting, the postdoc presents the steps of the analysis code as logical steps.
-- The lines of code are shown for those in the meeting that know R, but the postdoc explains the steps verbally as well for those who don't understand R.
-- The group discuss and provides comments on the choices and order of the analysis pipeline, a PhD student notices a jump in logic that wasn't picked up previously, and an advanced R user in the lab makes suggestions about making some parts run faster.
+- During a lab meeting, the postdoc presents the steps of his analysis R code as logical steps.
+- The code is explained both to R programmers and non-experts.
+- The group discuss and finds room for improvements on the choices and order of the analysis pipeline.
 
 ---
 
 # Suggestions for the meeting leader
 
-> - Keep it a safe environment
-> - Facilitate participation in the session
-> - Make it clear that your code isn’t perfect
-> - Patiently explain when things are not wrong but just not ideal
+- Keep it a safe environment
+- Facilitate participation in the session
+- Make it clear that your code isn’t perfect
+- Patiently explain when things are not wrong but just not ideal
 
 ---
 
@@ -104,10 +110,10 @@ The researcher may present their pipeline to describe the logical steps using do
 
 Consider a scenario:
 
-> A postdoc has created a model in Python and creates a Binder with all the dependencies necessary.
-> She sends the file to her supervisor who can run the code within her browser, no installation is required.
-> The supervisor can then run the code herself to review it and check the individual parts over the next week.
-> The supervisor adds a commented version of the script to the postdoc's repo with a merge request.
+- A postdoc has created a model in Python and creates a Binder with all the dependencies necessary.
+- She sends the file to her supervisor who can run the code within her browser, no installation is required.
+- The supervisor can then run the code herself to review it and check the individual parts over the next week.
+- The supervisor adds a commented version of the script to the postdoc's repo with a merge request.
 
 ---
 
@@ -137,10 +143,34 @@ Consider a scenario:
 
 # Reviewing is not about creating more work, nor the PI rewriting everything
 
-Instead, it is just another part of peer review and accountability within the scientific process.
-It is also an opportunity for everyone to learn better practices from each other, and solve issues that have plagued one person for weeks!
+- Instead, it is just another part of peer review and accountability within the scientific process.
+- It is also an opportunity for everyone to learn better practices from each other, and solve issues that have plagued one person for weeks!
 
-For further considerations in code review, please read [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) chapter in _The Turing Way_.
+> For further considerations in code review, please read [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) chapter in _The Turing Way_.
+
+---
+
+# What to look for during Code Review?
+
+- Repetitive code
+- Code saying one thing, documentation saying another
+- Off-by-one errors
+- Making sure each function does one thing only
+- Lack of tests and sanity checks for what different parts are doing
+- Magic numbers (a number hardcoded in the script)
+
+---
+
+# What to look for during Code Review?
+
+- Bad variable/method names
+- Inconsistent indentation
+- The order of the different steps
+- Lack of comments and signposting
+- Tailor-made and manual steps
+- Only works with the given data
+
+*Modified from [*What to look for when code reviewing*](https://www.cs.swarthmore.edu/~alinen/cs71/labs/lab03.html)*
 
 ---
 
@@ -152,36 +182,6 @@ For further considerations in code review, please read [Code Reviewing Process](
 
 ---
 
-# What to look for during Code Review? - Bugs
-
-- Repetitive code
-- Code saying one thing, documentation saying another
-- Off-by-one errors
-- Making sure each function does one thing only
-- Lack of tests and sanity checks for what different parts are doing
-- Magic numbers (a number hardcoded in the script)
-
----
-
-# What to look for during Code Review? - Unclear code
-
-- Bad variable/method names
-- Inconsistent indentation
-- The order of the different steps
-- Too much on one line
-- Lack of comments and signposting
-
----
-
-# What to look for during Code Review? - Reusability
-
-- Tailor-made and manual steps
-- Only works with the given data
-
-*Modified from [*What to look for when code reviewing*](https://www.cs.swarthmore.edu/~alinen/cs71/labs/lab03.html)*
-
----
-
 # Benefits of Code Review
 
 > In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews.
@@ -189,8 +189,6 @@ For further considerations in code review, please read [Code Reviewing Process](
 > The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.
 >
 > **[Code Complete](https://www.oreilly.com/library/view/code-complete-2nd/0735619670) by Steve McConnell**
-
-The main benefit is finding problems, and finding them early enough that there aren't frustrating consequences.
 
 ---
 
@@ -217,7 +215,7 @@ The main benefit is finding problems, and finding them early enough that there a
 
 ---
 
-**Important things to bear in mind:**
+# To bear in mind when doing reviews
 
 - Code reviews should not be used to evaluate individuals and their skill levels.
 - An open and safe environment where revealing mistakes and errors should not come with penalties or shame.
@@ -238,11 +236,8 @@ The main benefit is finding problems, and finding them early enough that there a
 # Group Code Writing
 
 - To work as a group will help teach less experienced members of the group and more efficiently solve very difficult problems.
-
 - If there is a complex solution in computational methods that most people in the group need, it makes sense to find it together.
-
 - Regular documentation updates are useful to dedicate time to regularly bring a codebase to a good minimum standard.
-
 - Faster onboarding of members and greater impact of your work
 
 ---
