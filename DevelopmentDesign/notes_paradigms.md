@@ -151,8 +151,9 @@ but only in its entirety through this notice.
 This manifesto was first concived at the Snowbird meeting in Utah in early 2001
 
 # Tools and methodologies  
-The tools and methodologies are too numerous to describe in any complete way,<rewrite> and they are always evolving as developers find issues with the models and methodologies they are currently using and trying to adress them there for many models evolve to adress the "lates and greates" method but as on be can guess this means other consessions have to be made. 
-<explain system>
+The tools and methodologies are too numerous to describe in any complete way, and they are always evolving as developers find issues with the models and methodologies they are currently using. The trends in software development is to find the "lates and greatest" method a silver bullet of development, this is ofcourse not a reachable goal. It is better to find a method that is good enough for the task you need to achive. 
+First we need to define, 
+A system can be defined as any structure of concepts that helps categorize a concept. This defintion is quite broad and not very helpful the defintions of systems but they get more useful as we lower the degree of abstraction, for example when we talk about a biological system or a information system. An information system is a system consiting of organisation,harware and software that help convay information between a sender and reciver. Further refined we can talk about a software system as the delimiter between components that make up some software. As our scope narrows the concept of system goes from the abstract to the concrete.  
 The best way to aproach wich methodology one should use is to look at the development requirements of the system that you wish to create and choose the one that lets you do the least amount of work for the highest value. 
 
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
@@ -173,11 +174,13 @@ Once a set of objects have been identified it is common to abstract these throug
 
 The act of classification is when you take behaviour of an object and describe it as a general method that works for all objects of that type and the properties of the objects are abstracted to class properties, remember each property is should in pure OO only be accessible to the object itself that is to any one instance of a class(Abstract properties obviously breaks this rule as will be seen later in the design pattern section.) 
 
-Methods are the implemementation of message passing. 
+Methods are the implemementation of **message passing**. 
 
-The concept of inheretance
+**The concept of inheretance** 
+Inheratance is the carrier of beahivour betweem similar objects. 
 
-Information Hiding is accomplished through the use of levels of publicity of the parameter/property or method. The levels of privacy are generally defined as: 
+**The concept of Information Hiding** is about making sure that each time in the excecution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of sideeffects and it allows for multiple developers to work on the project without risking to step on eachothers toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
+This is accomplished through the use of levels of publicity of the parameter/property or method. The levels of privacy are generally defined as: 
 private, protected and public in increasing accesabillity to the inherance structure and other classes or objects. A private property is only accesible to the object itself, the proteced are accesible to objects and classes in the same inheratace structure and public are accesible to any class or object in the software
 
 
@@ -198,7 +201,7 @@ Derived from Imperative programming, the basic concept of a procedure call where
 In functional programming, based of the lambda caclulus of Alonzo Church during the 1930s, the idea of pure functions, are meant to have no side effects is implemented as a design strategy, the secon concept that needs to be implemented is the concept of recursion which functions as the mechanism of iteration in functional programming.
 
 Programming languages like Haskell, LISP, IPL are languges that represent languages that implement the functional paradigm to varying degrees, but as most design paradigms any language that allows for recursive high order functions will allow for functional programming.
-## Declarative programming
+### Declarative programming
 A problem is solved is not specifically defined, but instead focuses on what needs to be solved. Declarative programming provides a constant to check to ensure the problem is solved correctly, but does not provide instructions on how to solve the problem. The exact manner in which the problem is solved is defined by the programming language’s implementation through models. Declarative programming is also called model-based programming. Functional, domain-specific (DSL) and logical programming languages fit under declarative programming, such as SQL, HTML, XML and CSS.
 (https://www.techtarget.com/whatis/definition/imperative-programming)
 
