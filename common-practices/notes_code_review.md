@@ -49,17 +49,23 @@ p {
 
 <img src="https://martinfowler.com/articles/on-pair-programming/driver_navigator.png" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
 
+> **Martin Fowler, [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)**
+
 ---
 
 # Pair Programming - Ping Pong
 
 <img src="https://martinfowler.com/articles/on-pair-programming/ping_pong.png" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
 
+> **Martin Fowler, [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)**
+
 ---
 
 # Pair Programming - Strong-Style Pairing
 
 <img src="https://www.thekguy.com/wp-content/uploads/2017/06/StrongStylePairing-1-1024x324.png" alt="drawing" height="75%" width="90%" style="display: block; margin: 0 auto">
+
+> **Keith McDonald, [Strong Style Pairing](https://www.thekguy.com/wp-content/uploads/2017/06/StrongStylePairing-1-1024x324.png)**
 
 ---
 
@@ -82,6 +88,8 @@ p {
 # Pair Programming - The Pomodoro technique
 
 <img src="https://martinfowler.com/articles/on-pair-programming/pomodoro.png" alt="drawing" height="75%" width="50%" style="display: block; margin: 0 auto">
+
+> **Martin Fowler, [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)**
 
 ---
 
@@ -117,14 +125,6 @@ Consider a scenario:
 
 ---
 
-# Multiple people can also review the code asynchronously.
-
-> Unlike traditional, “academic-style” peer review, most code review systems have several advantages: they’re rarely anonymous, they’re public-facing, and without the broker of an editor, contact between reviewer and reviewee can be direct and rapid.
-
-> This means code review is typically a fast, flexible, and interactive process.
-
----
-
 # Branching
 
 > **Branching**: keep a version of the code separate while making experimental changes or keeping track of collaborative work.
@@ -141,12 +141,11 @@ Consider a scenario:
 
 ---
 
-# Reviewing is not about creating more work, nor the PI rewriting everything
+# Reviewing is not about creating more work
 
-- Instead, it is just another part of peer review and accountability within the scientific process.
-- It is also an opportunity for everyone to learn better practices from each other, and solve issues that have plagued one person for weeks!
-
-> For further considerations in code review, please read [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) chapter in _The Turing Way_.
+- Instead, it is just another part of peer review and accountability within the scientific process
+- An opportunity for everyone to learn better practices from each other
+- Reviews are rarely anonymous, public-facing, and without the broker of an editor
 
 ---
 
@@ -184,34 +183,34 @@ Consider a scenario:
 
 # Benefits of Code Review
 
-> In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews.
-> The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code.
-> The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.
+> - In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews.
+> - The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code.
+> - The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.
 >
 > **[Code Complete](https://www.oreilly.com/library/view/code-complete-2nd/0735619670) by Steve McConnell**
 
 ---
 
-# Writing code collaboratively also benefit directly your team members:
+# Benefits - software developers
 
-> - Less time redoing work or refactoring
-> - Increased productivity
-> - Greater confidence in own work
-> - Learning better techniques
-> - Reduced time debugging alone
-> - Knowledge exchange and group cohesion
+- Less time redoing work or refactoring
+- Increased productivity
+- Greater confidence in own work
+- Learning better techniques
+- Reduced time debugging alone
+- Knowledge exchange and group cohesion
 
 ---
 
-# For a group leader, the benefits include:
+# Benefits - team leaders
 
-> - Better understanding of the projects
-> - More maintainable and better-documented code that is easy to understand and modify
-> - Better insight into any problems with data
-> - Earlier visibility of quality issues
-> - Group reviews reduce the work burden
-> - More robust analysis pipelines that can be reused and modified
-> - High-quality code that can be released
+- Better understanding of the projects
+- More maintainable and better-documented code that is easy to understand and modify
+- Better insight into any problems with data
+- Earlier visibility of quality issues
+- Group reviews reduce the work burden
+- More robust analysis pipelines that can be reused and modified
+- High-quality code that can be released
 
 ---
 
