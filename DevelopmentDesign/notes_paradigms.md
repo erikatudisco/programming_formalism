@@ -161,7 +161,7 @@ In this course we will present a few methodologies which are in no way or form t
 
 ## Paradigms of Design
 ## Modular development
-
+<!-- The history of modular development followed by the advantage of making components and modules in your software. also diffrentiate modules, software components and packages (python moudles are actually packages--->
 ## Object Orientation
 Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declartive programming which focuses on how you code. One can use any number of programming paradigms to implement the objectorieted design.
 
@@ -172,15 +172,30 @@ An object is the representation of a thing or concept, that encapsulates both da
 
 Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstact a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. Thes classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are gennerally instanciated as objects again which are the interacting entities of our software. 
 
-The act of classification is when you take behaviour of an object and describe it as a general method that works for all objects of that type and the properties of the objects are abstracted to class properties, remember each property is should in pure OO only be accessible to the object itself that is to any one instance of a class(Abstract properties obviously breaks this rule as will be seen later in the design pattern section.) 
+The act of classification is when you take behaviour of an object and describe it as a general method that works for all objects of that type and the properties of the objects are abstracted to class properties, remember each property is should in pure OO only be accessible to the object itself that is to any one instance of a class.
+In the classification of an object sometimes it is advantageous to make a class that is a class whose purpous is to define a common interface for their subclasses and therefor can not be instanciated. 
 
-Methods are the implemementation of **message passing**. 
 
-**The concept of inheretance** 
-Inheratance is the carrier of beahivour betweem similar objects. 
+ **The concept of message passing**
+ Each object has a external interface through which it interacts whith other objects, it is the carriers of messages public(access qualifier, see below) methods of the Classes are the implemementation of message passing.
 
+**Inheretance** 
+Inheratance is the carrier of beahivour betweem similar objects. When we implement the object model into a class model of common behaviour one of the most important features of object orientation(OO) is that it allows us to define the *is a* relationship such as a dog *is a* mamal this represented as en extention of the class where the subclass(dog) has all the carachteristics of the parent (mammal)
+```plantuml
+@startuml
+class parent{
+   operations()
+   }
+class child {}
+class mammal{}
+class dog{}
+parent<|--child:extends
+mammal<|-d-dog:is a
+@enduml
+```
+<br>
 **The concept of Information Hiding** is about making sure that each time in the excecution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of sideeffects and it allows for multiple developers to work on the project without risking to step on eachothers toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
-This is accomplished through the use of levels of publicity of the parameter/property or method. The levels of privacy are generally defined as: 
+This is accomplished through the use of *access qualifier* of the parameter/property or method. The levels of privacy are generally defined as: 
 private, protected and public in increasing accesabillity to the inherance structure and other classes or objects. A private property is only accesible to the object itself, the proteced are accesible to objects and classes in the same inheratace structure and public are accesible to any class or object in the software
 
 
