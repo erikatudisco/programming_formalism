@@ -11,6 +11,13 @@ Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Lif
  After the 80s models tend  to focus on the iterative nature of development. One way of thinkning about the iterative nature of development while keeping the incremental cost of iteration is as a helix. Where a change in the desig in a lower sprial incurs the cost of the previous spirals, eventually the cost of introducing change into the next step will be larger that what is profitable for the project, at which time the efforts into the project usually trickels down rather than following the theoretical step of retirment. 
  <image src="./img/helix_legend-01.png" > The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY licence<span style="font-size:10px"> </span>
 
+*recomended reading* 
+
+[Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
+
+[Evolutionary software engineering, a review](https://www.sciencedirect.com/science/article/pii/S1568494604000778)
+
+<br>
 Depending on the chosen method or metodology these steps are genarlly named sligthly diffrent dependent on model but i general the step fullfill the standard SDLC. 
 ##PHASES OF THE SDLC 
 In our five phased version of SDLC we section the development into five phases which are somewhat arbitray as most development is more fluid than the fixed models that have evolved from the waterfall model 
@@ -20,8 +27,8 @@ while the ISO/IEC version of SDLC has nine phases below is an atempt to map the 
 
 In the first phase one needs to determine what Trauth et.al call Percetption of need, Feasabillity and Analysis
 The ISO/IEC standard 12207 calls this **Needs Determination** 
-after the needs have been determined they are fleshed out in the **Concept and Exploration**
-
+after the needs, the inital requirments, have been determined through the above mentions process they are then fleshed out in the **Concept and Exploration**
+according to the SDLC_ISO_IEC_12207 this is the time to make a risk anaysis of your development stategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evulotionary software model()
 Most models cover some form of risk assesment, involved in the requiremnts gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
 
 ## Second phase   *Design*
