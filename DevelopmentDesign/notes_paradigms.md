@@ -16,7 +16,11 @@ Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Lif
 
 Iterative models like RUP or Spiral model will emphises that a software is developed in itterative steps where you may spend more or less time in any give phase, usualy earlier iteration focus on planing and later on development and maintenace. Each time a change is introducced the impact on the cost increases with number of iteration and phases. 
 Evolutionary software development like the Living Software Development Process takes inspiration from geneting algorithms and genetic programing to build a library of models from which to work.
-*recomended reading* 
+
+
+*recomended reading*
+
+[SDLC stands for Software Development Life Cycle at www.tutorialspoint.com](https://www.tutorialspoint.com/sdlc/index.htm)
 
 [Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
 
