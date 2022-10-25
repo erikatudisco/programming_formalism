@@ -175,7 +175,6 @@ The best way to aproach wich methodology one should use is to look at the develo
 
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
 
-
 # Paradigms of Design
 ## Modular development
 <!-- The history of modular development followed by the advantage of making components and modules in your software. also diffrentiate modules, software components and packages (python moudles are actually packages--->
@@ -245,12 +244,13 @@ The Unified modelling language was first standardized in November 1997 as [UML-9
 A breif history of the development of UML and other modeling languages which primarly are for objectoriented modeling(observ that the UML standard also works well for describing other models using such things as activity diagrams and sequence diagram to describe algorithms or interactions between sections of your code.)
 <image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model languge history fromhttps://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
 
-plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its crossplatform integration and its itegration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces.
-
-*Plantuml vizulaiser* is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
-The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward enginering from models to code. There are ofcourse great comersial versions but also some decent free ones.
+plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its crossplatform integration and its itegration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward enginering from models to code. There are ofcourse great comersial versions but also some decent free ones.
 draw.io
-https://www.eclipse.org/papyrus/
+[Papyrus](https://www.eclipse.org/papyrus/)
+
+[*Markdown Diagrams*](https://github.com/marcozaccari/markdown-diagrams-browser-extension) is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
+
+
 
 ```plantuml
 @startuml
