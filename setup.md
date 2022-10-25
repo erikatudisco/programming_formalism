@@ -70,8 +70,10 @@ ssh-add ~/.ssh/id_ed25519
 ## PlantUML
 - We will use the tool PlantUML to render UML code to graphical diagrams and flowcharts. 
 - If you want PlantUML to render directly from a file on GitHub please install the extension PlantUML viewer to your web browser.
-  - Firefox: PlantUML viewer
-  - Chrome: Pegmatite
+-  works for multiple browsers https://github.com/marcozaccari/markdown-diagrams-browser-extension
+-  if the above does not work try
+  - Firefox: PlantUML visualizer (is not compatible with !theme _none_ tag)
+  - Chrome: Pegmatite,PlantUML viewer
   - Microsoft Edge Markdown Diagrams
 - When done you should see the code below as a diagram.
 
