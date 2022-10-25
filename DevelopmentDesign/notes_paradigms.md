@@ -264,7 +264,8 @@ Participant-d->(learn UML from SLIDES)
 
 ```plantuml
 @startuml
- class class01 {
+ !theme _none_
+  class class01 {
     -var01 : Integer
     Time : Date
     #method01()
