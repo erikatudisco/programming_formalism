@@ -4,8 +4,9 @@ size: 16:9
 paginate: false
 style: |
   :root {
-    font-family: IBM Plex Sans;
+    font-family: Montserrat;
     color: #003300;
+    font-size: 28px;
   }
   h1 {
     font-size: 1.3rem;
@@ -16,13 +17,15 @@ style: |
   }
 ---
 
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
 <style scoped>
 p {
-  font-size: 80px;
+  font-size: 74px;
 }
 </style>
 
-> What is code reviewing and how can it improve our code?
+> What are Code Reviews and how can they help us?
 
 ---
 
@@ -36,12 +39,13 @@ p {
 
 # Synchronous - Pair Programming
 
-**Helping the student go through their scripts, catch errors and debug side by side**
+Consider the following scenario:
 
-- The PI sits down with her student who has been writing some code
-- They discuss how the code could better.
-- The student shows the PI some issues and they manage to solve it.
-- The PhD student learns and makes the code more robust
+- 1. The PI sits down with her student.
+- 2. They discuss how the code could better.
+- 3. They find and solve issues together.
+- 4. The student learns something new.
+- 5. The code becomes more reusable.
 
 ---
 
@@ -93,15 +97,13 @@ p {
 
 ---
 
-# Synchronous - Group Code Tour or Informal Walkthroughs
+# Synchronous - Group Code Tour
 
-**Narrating code and software steps**
+Consider the following scenario:
 
-The researcher may present their pipeline to describe the logical steps using documentation, pseudocode, or describing how to run the code.
-
-- During a lab meeting, the postdoc presents the steps of his analysis R code as logical steps.
-- The code is explained both to R programmers and non-experts.
-- The group discuss and finds room for improvements on the choices and order of the analysis pipeline.
+- 1. During a lab meeting, the student presents the steps of her code as logical steps.
+- 2. The code is explained both to R programmers and non-experts.
+- 3. The group discuss together and improve the code
 
 ---
 
@@ -116,12 +118,12 @@ The researcher may present their pipeline to describe the logical steps using do
 
 # Asynchronous - I'll get back to you on that
 
-Consider a scenario:
+Consider the following scenario:
 
-- A postdoc has created a model in Python and creates a Binder with all the dependencies necessary.
-- She sends the file to her supervisor who can run the code within her browser, no installation is required.
-- The supervisor can then run the code herself to review it and check the individual parts over the next week.
-- The supervisor adds a commented version of the script to the postdoc's repo with a merge request.
+- 1. A postdoc has created a model in Python
+- 2. She sends the instructions to test it to her supervisor
+- 3. The supervisor can then review it over the next week
+- 4. The supervisor makes a PR to the repo with improvements
 
 ---
 
@@ -143,24 +145,25 @@ Consider a scenario:
 
 # Reviewing is not about creating more work
 
-- Instead, it is just another part of peer review and accountability within the scientific process
-- An opportunity for everyone to learn better practices from each other
-- Reviews are rarely anonymous, public-facing, and without the broker of an editor
+- Part of the scientific process
+- An opportunity for everyone to learn better practices
+- Reviews are rarely anonymous
+- Often public-facing
 
 ---
 
-# What to look for during Code Review?
+# Where to put the focus? (I)
 
 - Repetitive code
 - Code saying one thing, documentation saying another
 - Off-by-one errors
 - Making sure each function does one thing only
-- Lack of tests and sanity checks for what different parts are doing
-- Magic numbers (a number hardcoded in the script)
+- Lack of tests and sanity checks
+- Magic numbers
 
 ---
 
-# What to look for during Code Review?
+# Where to put the focus? (II)
 
 - Bad variable/method names
 - Inconsistent indentation
@@ -173,7 +176,7 @@ Consider a scenario:
 
 ---
 
-# Who should do a Code Review?
+# Who should do it?
 
 > "Anyone" should be able to perform code reviews.
 
@@ -181,7 +184,7 @@ Consider a scenario:
 
 ---
 
-# Benefits of Code Review
+# Benefits - a case study
 
 > - In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews.
 > - The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code.
@@ -205,39 +208,29 @@ Consider a scenario:
 # Benefits - team leaders
 
 - Better understanding of the projects
-- More maintainable and better-documented code that is easy to understand and modify
-- Better insight into any problems with data
-- Earlier visibility of quality issues
-- Group reviews reduce the work burden
-- More robust analysis pipelines that can be reused and modified
+- Maintainable and better-documented code
+- Earlier and better visibility of issues
+- Group reviews reduce work burden
+- Reusability and modification
 - High-quality code that can be released
 
 ---
 
-# To bear in mind when doing reviews
+# To bear in mind
 
-- Code reviews should not be used to evaluate individuals and their skill levels.
-- An open and safe environment where revealing mistakes and errors should not come with penalties or shame.
-- Code reviews should also be done early and often, to normalise this practice in the research team.
+- Should not be used to evaluate individuals
+- Revealing mistakes should not come with penalties or shame.
+- Sshould also be done early and often
 
 ---
 
-# What obstacles can we encounter in Code Reviews?
+# Potential obstacles
 
 - Conflicts of interest
 - Strong personal views about non crucial matters
 - Misunderstandings and/or misinterpretations
 - Code ownership
 - Psychological safety
-
----
-
-# Group Code Writing
-
-- To work as a group will help teach less experienced members of the group and more efficiently solve very difficult problems.
-- If there is a complex solution in computational methods that most people in the group need, it makes sense to find it together.
-- Regular documentation updates are useful to dedicate time to regularly bring a codebase to a good minimum standard.
-- Faster onboarding of members and greater impact of your work
 
 ---
 
