@@ -38,7 +38,7 @@ according to the SDLC_ISO_IEC_12207 this is the time to make a risk anaysis of y
 Most models cover some form of risk assesment, involved in the requiremnts gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
 
 ## Second phase   *Design*
-This stage coresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation**
+This stage coresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirments put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a litlle less :-)  but still it is important to not over enginer when you and your team have a clear picture of what you whant to develop that is when we step to the next phase)
 
 ## Third phase  *Development*
  This stage coresponds to the fourth phase in the ISO/IEC standard **Enginering/Development** is the stage where you use processes to implement your software system that is this is the coding step.
@@ -320,25 +320,93 @@ Unified modeling language is defined and managed by the OMG(obeject management g
 <image src="./img/Uml_hierarchie_des_diagrammes.png"><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
 *Structure Diagrams* 
 - Class Diagram 
-- Component Diagram 
-- Object Diagrams 
+   
+   Class diagrams are the most common diagrams used in UML. Class diagram consists of classes, interfaces, associations, and collaboration. Class diagrams basically represent the object-oriented view of a system, which is static in nature.
+   Class diagram represents the object orientation of a system. Hence, it is generally used for development purpose. This is the most widely used diagram at the time of system construction.
+- Object Diagrams
+   
+   Object diagrams can be described as an instance of class diagram. Thus, these diagrams are more close to real-life scenarios where we implement a system.
+   The usage of object diagrams is similar to class diagrams but they are used to build prototype of a system from a practical perspective 
+
+- Component Diagram
+   
+   Component diagrams represent a set of components and their relationships. These components consist of classes, interfaces, or collaborations. Component diagrams represent the implementation view of a system.
+   During the design phase, software artifacts (classes, interfaces, etc.) of a system are arranged in different groups depending upon their relationship. Now, these groups are known as components.
+   Component diagrams can also be used to represent modules in modular development view.
+   Finally, it can be said component diagrams are used to visualize the implementation. 
 - composite structure diagram
 - Deployment diagram
+   
+   Deployment diagrams are a set of nodes and their relationships. These nodes are physical entities where the components are deployed.
+   Deployment diagrams are used for visualizing the deployment view of a system. This is generally used by the deployment team.
 - Package Diagram
+
+  Package diagram, a kind of structural diagram, shows the arrangement and organization of model elements in the project. Package diagram can show both structure and dependencies between sub-systems or modules, showing different views of a system, for example, as multi-layered or multi-tiered application 
+  The purpous of these diagrams are to:
+   - Simplyfy complex class diagrams
+   - collect and organise diagrams and documents and key deliverables into a collection. 
+   - A package is a collection of logically related UML elements
+   - Packages are depiced as file folders.
+
+- **Note**  − If the above descriptions and usages are observed carefully then it is very clear that all the diagrams have some relationship with one another. Component diagrams are dependent upon the classes, interfaces, etc. which are part of class/object diagram. Again, the deployment diagram is dependent upon the components, which are used to make component diagrams. 
+
 *Behaviour Diagrams*
 - Activity Diagram
-- Use Case diagram
-- State Machine Diagram
+Activity diagram describes the flow of control in a system. It consists of activities and links. The flow can be sequential, concurrent, or branched.
+Activities are nothing but the functions of a system. Numbers of activity diagrams are prepared to capture the entire flow in a system.
+Activity diagrams are used to visualize the flow of controls in a system. This is prepared to have an idea of how the system will work when executed.
+Activity diagrams are also excellent to describe Algotithms, in conjuction with pseudo code. 
 
+- **Note** Due to that the dynamic nature of a system is very difficult to capture. UML has provided features to capture the dynamics of a system from different angles. Sequence diagrams and collaboration diagrams are isomorphic, hence they can be converted from one another without losing any information. This is also true for Statechart and activity diagram
+
+- Use Case diagram
+   A set of use cases, actors, and their relationships. They represent the use case view of a system. The intention of using a use case view and not just text to describe the uscases of your system is so you can describe the relationship between different stake holders, controllers (Actors)
+   A use case represents a particular functionality of a system. It is used to describe the relationships among the functionalities and their internal/external controllers. 
+
+- State Machine Diagram
+ Any real-time system is expected to be reacted by some kind of internal/external events. These events are responsible for state change of the system.
+Statechart diagram is used to represent the event driven state change of a system. It basically describes the state change of a class, interface, etc.
+State chart diagram is used to visualize the reaction of a system by internal/external factors
 - *Interaction diagrams*
    - Sequence diagram
-   - Comunication diagram
+     A sequence diagram is an interaction diagram. From the name, it is clear that the diagram deals with some sequences, which are the sequence of messages flowing from one object to another.
+      Interaction among the components of a system is very important from implementation and execution perspective. Sequence diagram is used to visualize the sequence of calls in a system to perform a specific functionality.
+   - Comunication diagram or collaboration diagram
+    It represents the structural organization of a system and the messages sent/received. Structural organization consists of objects and links.
+    The purpose of collaboration diagram is similar to sequence diagram. However, the specific purpose of collaboration diagram is to visualize the organization of objects and their interaction.
+    <image src="./img/Communication-Diagram-Financial-Analysis.webp"><span style="font-size:10px"> [A MVC model descibing a finacial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
+   - **Note** Plant UML can not do Communication diagram/collaboration diagrams
+
    - Interaction overview diagram
+     UML Interaction Overview Diagrams provide a high level of abstraction an interaction model. It is a variant of the Activity Diagram where the nodes are the interactions or interaction occurrences.
+
    - Timing Diagram
+     Timing diagrams are UML interaction diagrams used to show interactions when a primary purpose of the diagram is to reason about time. 
+   ```plantuml
+      @startuml
+         robust "Web Browser" as WB
+         concise "Web User" as WU
+         @0
+         WU is Idle
+         WB is Idle
+      @100
+      WU is Waiting
+      WB is Processing
+      @300
+      WB is Waiting
+      @enduml
+   ``` 
 
 
 ### Pair Programming 
  A tool for rapid development is the so called Pair Programming where two developers code on the same code simultatiously one as the "Driver" and one as the "Navigator" 
 
  ### Design Patterns
-  A design pattern is a collection of bestpractises to solve a given design problem. Such as window managent on your computer. 
+  A design pattern is a collection of bestpractises to solve a given design problem. Such as window managent on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View(The User interface and external comunications of the program)
+  <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions betwen program interface, control and dat(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
+Some examples of where this pattern has been implemented in modern times are:
+- [Ruby on Rails](https://rubyonrails.org/)
+- [ASP.NET MVC](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) Microsoft Active Server Pagess in the .NET framework 
+- [Laravel](https://laravel.com/) PHP framework
+- [Angular](https://angular.io/) is built using TypeScript
+A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Obejct-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
