@@ -261,14 +261,10 @@ Lecturer -d->(Present slides on UML)
 Participant-d->(learn UML from SLIDES)
 @enduml
 ```
+
 ```plantuml
 @startuml
  !theme _none_
- class01 <|-- class02
- class03 *-- class04
- class05 o-- class06
-
- class01- class03 : knows >
  class class01 {
     -var01 : Integer
     Time : Date
@@ -276,6 +272,12 @@ Participant-d->(learn UML from SLIDES)
     +get_var01()
     {method}Without paranteces or Qualifiers
  }
+ class01 <|-- class02
+ class03 *-- class04
+ class05 o-- class06
+
+ class01 - class03 : knows >
+ 
 @enduml
 ```
 //legacy style uml
