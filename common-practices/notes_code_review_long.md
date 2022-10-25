@@ -4,14 +4,6 @@ This material is based on the Code Review lecture by The Carpentries:
 
 # Code Review
 
-## What social obstacles have you encountered in code reviews?
-
-- Conflicts of interest
-- Misunderstandings
-- Misinterpretations
-- Emotional reactions: code ownership
-- Lack of feedback because of not great psychological safety
-
 > The most difficult part of writing code is always to make it understandable to other people, including yourself a few months down the track. There’s certainly no shame in finding out that your code wasn’t as easy to understand or use as you’d hoped, so don’t take it personally when it happens (which it always does, at least in my experience), but treat it as an opportunity to improve.
 >
 > **Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)**
