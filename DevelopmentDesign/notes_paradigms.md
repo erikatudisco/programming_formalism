@@ -275,9 +275,7 @@ Participant-d->(learn UML from SLIDES)
  class01 <|-- class02
  class03 *-- class04
  class05 o-- class06
-
  class01 - class03 : knows >
- 
 @enduml
 ```
 //legacy style uml
