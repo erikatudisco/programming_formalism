@@ -318,6 +318,24 @@ stop
 Unified modeling language is defined and managed by the OMG(obeject management group)(omg.org), which is a standrard developments organisation with 27 countries and more than 230 organisations which produces standards for buissnes development and the software industry. UML is devided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behaviour. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and statemachines are great for describing the flow of a program and to supplement pseudo code when vizualing processes or algorithms.
 **Diagrams** 
 <image src="./img/Uml_hierarchie_des_diagrammes.png"><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
+*Structure Diagrams* 
+- Class Diagram 
+- Component Diagram 
+- Object Diagrams 
+- composite structure diagram
+- Deployment diagram
+- Package Diagram
+*Behaviour Diagrams*
+- Activity Diagram
+- Use Case diagram
+- State Machine Diagram
+
+- *Interaction diagrams*
+   - Sequence diagram
+   - Comunication diagram
+   - Interaction overview diagram
+   - Timing Diagram
+
 
 ### Pair Programming 
  A tool for rapid development is the so called Pair Programming where two developers code on the same code simultatiously one as the "Driver" and one as the "Navigator" 
