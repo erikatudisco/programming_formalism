@@ -45,7 +45,7 @@ p {
 
 From [Science editorial policy](https://www.sciencemag.org/authors/science-journals-editorial-policies):
 
-> "We require that **all computer code used for modeling and/or data analysis** that is not commercially available be deposited in a **publicly accessible repository** upon publication.
+> "We require that **all computer code used for modeling and/or data analysis** that is not commercially available be deposited in a **publicly accessible repository** upon publication."
 
 From [Nature editorial policy](https://www.nature.com/authors/policies/availability.html):
 
