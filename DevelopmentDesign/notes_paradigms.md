@@ -1,7 +1,10 @@
 # Software development processes
 
 ## SDLC
-*SDLC* ,or the Software Development Life Cycle, is a model describing the process of bringing a peice of software to market and maintaining it. The basic steps or as they are know phases each encompass different tasks  needed to be completed as the software goes from idea to frution through an iterative process. 
+*SDLC* ,or the Software Development Life Cycle, is a model describing the process of bringing a peice of software to market and maintaining it. The basic steps or as they are know phases each encompass different tasks needed to be completed as the software goes from idea to frution.
+<image src="./img/SDLC.png">
+<span style="font-size:10px"> Generalized SDLC phases as a cycle of steps where the cicle is traversed multiple times, there is a week correlation between cycles and versions</span>
+You will if you google around many varitations of this and the phases can change some what but the genreal idea stays constant. The following illustations show both a variation of the common lifecycel model and  the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
   <!--- https://www.tutorialspoint.com/sdlc/index.htm --->
 <image src="./img/SDLC_ISO_IEC_12207.png"><span style="font-size:10px"> Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010
 Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Life Cycle Management</span>
@@ -11,6 +14,8 @@ Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Lif
  After the 80s models tend  to focus on the iterative nature of development. One way of thinkning about the iterative nature of development while keeping the incremental cost of iteration is as a helix. Where a change in the desig in a lower sprial incurs the cost of the previous spirals, eventually the cost of introducing change into the next step will be larger that what is profitable for the project, at which time the efforts into the project usually trickels down rather than following the theoretical step of retirment. 
  <image src="./img/helix_legend-01.png" > The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY licence<span style="font-size:10px"> </span>
 
+Iterative models like RUP or Spiral model will emphises that a software is developed in itterative steps where you may spend more or less time in any give phase, usualy earlier iteration focus on planing and later on development and maintenace. Each time a change is introducced the impact on the cost increases with number of iteration and phases. 
+Evolutionary software development like the Living Software Development Process takes inspiration from geneting algorithms and genetic programing to build a library of models from which to work.
 *recomended reading* 
 
 [Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
@@ -19,7 +24,8 @@ Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Lif
 
 <br>
 Depending on the chosen method or metodology these steps are genarlly named sligthly diffrent dependent on model but i general the step fullfill the standard SDLC. 
-##PHASES OF THE SDLC 
+
+# PHASES OF THE SDLC 
 In our five phased version of SDLC we section the development into five phases which are somewhat arbitray as most development is more fluid than the fixed models that have evolved from the waterfall model 
 while the ISO/IEC version of SDLC has nine phases below is an atempt to map the phases to eachother.
 
@@ -28,7 +34,7 @@ while the ISO/IEC version of SDLC has nine phases below is an atempt to map the 
 In the first phase one needs to determine what Trauth et.al call Percetption of need, Feasabillity and Analysis
 The ISO/IEC standard 12207 calls this **Needs Determination** 
 after the needs, the inital requirments, have been determined through the above mentions process they are then fleshed out in the **Concept and Exploration**
-according to the SDLC_ISO_IEC_12207 this is the time to make a risk anaysis of your development stategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evulotionary software model()
+according to the SDLC_ISO_IEC_12207 this is the time to make a risk anaysis of your development stategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evulotionary software model(Living Software Development Process)
 Most models cover some form of risk assesment, involved in the requiremnts gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
 
 ## Second phase   *Design*
@@ -43,11 +49,15 @@ This stage coresponds to the third phase in the ISO/IEC standard **Demonstration
 ## Fifth phase *Maintenance*/*Deployment and Maintenance*
  **Operations** , **Maintenance and support** as well as the **Retiermnet** phase of the ISO/IEC standard 
 
+# Development Processes
+Below some descriptions of Development process, what model should be chosen should according to ISO/IEC 12207 be determined through a risk analysis and
+then risk minimised,but in practice the choice is often determined by the culture of the development team and organisation policy. 
+
 ## Spiral model
 The spiral model was developed in 1986 by Barry Boehm in his paper A Spiral Model of Software Development and Enhanchment
 The focus of the spiral model is to identify risk 
 <image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presentes by Boehm 1988, from https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png </span>
-
+ 
 ## RUP, Rational Unified Process
  Rational Unified Process is a software development metod based on iterative obejctoriented development. The idea is that you tailor the development method to fit the project, this howerver is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some consessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Buiseness modeling), Each phase in RUP is a complete itreation of the design steps Inception, Elaboration,Construction and Transition
    <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
@@ -166,7 +176,7 @@ The best way to aproach wich methodology one should use is to look at the develo
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
 
 
-## Paradigms of Design
+# Paradigms of Design
 ## Modular development
 <!-- The history of modular development followed by the advantage of making components and modules in your software. also diffrentiate modules, software components and packages (python moudles are actually packages--->
 ## Object Orientation
@@ -207,7 +217,7 @@ private, protected and public in increasing accesabillity to the inherance struc
 
 
 
-## Paradigms of Programming 
+# Paradigms of Programming 
 
 ### Structural programming
 The concept of structural programming is from 1950s with the aim of improving clarity and quality of software, by the introduction of structured controlflow and block structers that is clearly defined areas of computation. Edsger W. Dijkstra coined the term in his 
@@ -218,6 +228,8 @@ Imperative programming requires an understanding of the functions necessary to s
 (https://www.techtarget.com/whatis/definition/imperative-programming)
 ### procedural programming
 Derived from Imperative programming, the basic concept of a procedure call where a procedure is a routine or subroutine which contains the computational steps to be carried out.
+### object oriented programming
+The evolution of programming languages that support the object oriented design paradigm is long and branched with different amounts of support for the different concepts. Any language can be used to code object oriented but the effort of doing so may not be useful or cost effective. 
 
 ### Functional programming
 In functional programming, based of the lambda caclulus of Alonzo Church during the 1930s, the idea of pure functions, are meant to have no side effects is implemented as a design strategy, the secon concept that needs to be implemented is the concept of recursion which functions as the mechanism of iteration in functional programming.
@@ -232,9 +244,10 @@ A problem is solved is not specifically defined, but instead focuses on what nee
 The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software enginering). it is by that nature very good att describing the Rational Unified Process (RUP), se below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintanined by the omg standard development organisation https://www.omg.org/spec/UML/2.5/PDF) 
 A breif history of the development of UML and other modeling languages which primarly are for objectoriented modeling(observ that the UML standard also works well for describing other models using such things as activity diagrams and sequence diagram to describe algorithms or interactions between sections of your code.)
 <image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model languge history fromhttps://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
-plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. 
 
-Plantuml vizulaiser is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
+plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its crossplatform integration and its itegration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces.
+
+*Plantuml vizulaiser* is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
 The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward enginering from models to code. There are ofcourse great comersial versions but also some decent free ones.
 draw.io
 https://www.eclipse.org/papyrus/
@@ -292,6 +305,8 @@ stop
 @enduml
 ```
 Unified modeling language is defined and managed by the OMG(obeject management group)(omg.org), which is a standrard developments organisation with 27 countries and more than 230 organisations which produces standards for buissnes development and the software industry. UML is devided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behaviour. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and statemachines are great for describing the flow of a program and to supplement pseudo code when vizualing processes or algorithms.
+**Diagrams** 
+<image src="./img/Uml_hierarchie_des_diagrammes.png"><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
 
 ### Pair Programming 
  A tool for rapid development is the so called Pair Programming where two developers code on the same code simultatiously one as the "Driver" and one as the "Navigator" 
