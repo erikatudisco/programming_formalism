@@ -176,8 +176,19 @@ The best way to aproach wich methodology one should use is to look at the develo
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
 
 # Paradigms of Design
-## Modular development
-<!-- The history of modular development followed by the advantage of making components and modules in your software. also diffrentiate modules, software components and packages (python moudles are actually packages--->
+## Modular development/programming
+A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the conept of modules in a language that have support for objects but not for modules.
+The principles of modular programming was introduced in the 1960s by Larry LeRoy Constantine with the proposal of adding modules to AGOL68 to AGOL68-R being the concrete application of the modular development paradigm.
+
+[Code labs introduction to modular programming](https://codelabs.rocks/blog/detailed-guide-for-modular-programming-concept) state the following principles regarding modular programming:
+There are two types of module, *program control modules* which are purpously and only designed for controling the flow of the program. This is usually where the main functionallity of a program is defined. *Specific task modules* A modul that carries the data transfer amid the inital module and other modules. Specific task modules carries the functionality of the program and have a set of predefined data transmission options:
+- no communication in with no communication out
+- no communication in with some communication out
+- some communication in with some communication out
+- some communication in with no communication out
+
+The point of designing with modular development is to enforce information hiding which in this case manely makes the development independent of the specifc development team and enambles code reuse. At a higher state a modular design achive the same interchangablillity over the design space.  
+
 ## Object Orientation
 Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declartive programming which focuses on how you code. One can use any number of programming paradigms to implement the objectorieted design.
 
