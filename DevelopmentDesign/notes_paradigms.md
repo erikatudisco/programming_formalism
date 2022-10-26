@@ -130,7 +130,7 @@ https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
 
 
 ## eXtreme Programming
-<image src="./img/Extreme_Programming_BGW.png">
+<image src="./img/Extreme_Programming_bgw.png">
    <span style="font-size:10px">The loops of eXtremeProgramming </span>
 
 ## TDD Test Driven Development
