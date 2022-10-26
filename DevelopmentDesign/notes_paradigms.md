@@ -65,7 +65,7 @@ The focus of the spiral model is to identify risk
 ## RUP, Rational Unified Process
  Rational Unified Process is a software development metod based on iterative obejctoriented development. The idea is that you tailor the development method to fit the project, this howerver is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some consessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Buiseness modeling), Each phase in RUP is a complete itreation of the design steps Inception, Elaboration,Construction and Transition
    <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
-   <font>image contributated from  Wikimedia Commons and was originaly made Jakob Farian Krarup and released to the public domain under cc 0
+   <span style="font-size:10px">image contributated from  Wikimedia Commons and was originaly made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
 ### Inception
  The focus of the inception stage is to identify the user needs to initial uscase development 
@@ -128,6 +128,11 @@ Using Protoyping and minimal design to generate fast development cycles, this ha
 futher reading:
 https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
 
+
+## eXtreme Programming
+<image src="./img/Extreme_Programming_BGW.png">
+   <span style="font-size:10px">The loops of eXtremeProgramming </span>
+
 ## TDD Test Driven Development
 TDD will be covered in detail elsewhere, but the genreal idea of TDD is to generate roubust solutions through the use of test for the whole life cycle.
 
@@ -170,6 +175,24 @@ this declaration may be freely copied in any form,
 but only in its entirety through this notice. 
 
 This manifesto was first concived at the Snowbird meeting in Utah in early 2001
+
+## DevOps 
+<image src="./img/Devops-toolchain.png">
+   <span style="font-size:10px">The DevOps Loop includes both the traditional SDLC and the Organistational tasks of the release</span>
+From the [GitLab DevOps] Page(https://about.gitlab.com/topics/devops/)
+
+DevOps can be best explained as people working together to conceive, build and deliver secure software at top speed. DevOps practices enable software developers (devs) and operations (ops) teams to accelerate delivery through automation, collaboration, fast feedback, and iterative improvement.
+
+Stemming from an Agile approach to software development, a DevOps delivery process expands on the cross-functional approach of building and shipping applications in a faster and more iterative manner. In adopting a DevOps development process, you are making a decision to improve the flow and value delivery of your application by encouraging a more collaborative environment at all stages of the development cycle.
+DevOps is a combination of software developers (dev) and operations (ops). It is defined as a software engineering methodology which aims to integrate the work of software development and software operations teams by facilitating a culture of collaboration and shared responsibility.
+The DevOps methodology comprises four key principles that guide the effectiveness and efficiency of application development and deployment. These principles, listed below, center on the best aspects of modern software development.
+
+    Automation of the software development lifecycle
+    Collaboration and communication
+    Continuous improvement and minimization of waste
+    Hyperfocus on user needs with short feedback loops
+
+By adopting these principles, organizations can improve code quality, achieve a faster time to market, and engage in better application planning.
 
 # Tools and methodologies  
 The tools and methodologies are too numerous to describe in any complete way, and they are always evolving as developers find issues with the models and methodologies they are currently using. The trends in software development is to find the "lates and greatest" method a silver bullet of development, this is ofcourse not a reachable goal. It is better to find a method that is good enough for the task you need to achive. 
