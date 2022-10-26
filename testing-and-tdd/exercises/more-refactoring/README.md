@@ -27,5 +27,3 @@ class TennisGame:
 ```
 
 and its methods accordingly. What happens to the tests if you do this? 
-
-**Is this too hard? Do not worry, we will look at it together later**
