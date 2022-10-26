@@ -15,7 +15,7 @@ There are two sets of unit test for this class - `testsA.py` and `testsB.py`.
 3. Looking at the test code, which of the two sets (`testsA.py` and `testsB.py`) is better?
 4. The `TennisGame` class seems to work as intended, but has a some issues.
 For example, it allows a state where both player have _advantage_ - something that is impossible in real life. 
-Refactor the class to keep the number of balls won instead the points. That is, change the class definition 
+Refactor the class to keep the number of balls won instead of the point score. That is, change the class definition 
 to something like
 
 ```
@@ -26,6 +26,6 @@ class TennisGame:
         self.__numberOfBallsWon2 = 0
 ```
 
-and the code accordingly. What happens to the tests if you do this? 
+and its methods accordingly. What happens to the tests if you do this? 
 
-
+**Is this too hard? Do not worry, we will look at it together later**
