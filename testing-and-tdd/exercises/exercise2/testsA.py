@@ -1,165 +1,57 @@
-from tennis import TennisGame
+import pytest
+
+from research import ResearchSubject, ResearchSubjects
+
+test_subject = ResearchSubject('123', 45.3)
 
 
-def test_player_one_points_updated_correctly_from_0():
-    game = TennisGame()
-    game.player_1_won()
-    assert game.points1 == 15
+def test_there_are_no_subjects_from_start():
+    subjects = ResearchSubjects()
+    assert subjects.collection == []
 
 
-def test_player_one_points_updated_correctly_from_15():
-    game = TennisGame()
-    game.points1 = 15
-    game.player_1_won()
-    assert game.points1 == 30
+def test_add():
+    subjects = ResearchSubjects()
+    subjects.add(test_subject)
+    stored_subject = next(iter(subjects.collection))
+    assert stored_subject.identifier == test_subject.identifier
+    assert stored_subject.data == test_subject.data
 
 
-def test_player_one_points_updated_correctly_from_30():
-    game = TennisGame()
-    game.points1 = 30
-    game.player_1_won()
-    assert game.points1 == 40
+def test_can_not_add_already_existing_subject():
+    subjects = ResearchSubjects()
+    subjects.collection = [test_subject]
+    with pytest.raises(AssertionError):
+        subjects.add(test_subject)
 
 
-def test_player_one_gets_advantage_if_wins_point_at_forty_all():
-    game = TennisGame()
-    game.points1 = 40
-    game.points2 = 40
-    game.player_1_won()
-    assert game.points1 == 'advantage'
+def test_find():
+    subjects = ResearchSubjects()
+    subjects.collection = [test_subject]
+    found = subjects.find(test_subject.identifier)
+    assert found.identifier == test_subject.identifier
+    assert found.data == test_subject.data
 
 
-def test_player_two_points_updated_correctly_from_0():
-    game = TennisGame()
-    game.player_2_won()
-    assert game.points2 == 15
+def test_find_return_none_if_subject_is_not_found():
+    subjects = ResearchSubjects()
+    found = subjects.find(test_subject.identifier)
+    assert found is None
 
 
-def test_player_two_points_updated_correctly_from_15():
-    game = TennisGame()
-    game.points2 = 15
-    game.player_2_won()
-    assert game.points2 == 30
+def test_remove():
+    subjects = ResearchSubjects()
+    subjects.collection = [test_subject]
+    subjects.remove(test_subject.identifier)
+    assert subjects.collection == []
 
 
-def test_player_two_points_updated_correctly_from_30():
-    game = TennisGame()
-    game.points2 = 30
-    game.player_2_won()
-    assert game.points2 == 40
-
-
-def test_player_two_gets_advantage_if_wins_point_at_forty_all():
-    game = TennisGame()
-    game.points1 = 40
-    game.points2 = 40
-    game.player_2_won()
-    assert game.points2 == 'advantage'
-
-
-def test_player_one_wins_if_has_40_to_0_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 40
-    game.points2 = 0
-    result = game.player_1_won()
-    assert result == 'Game player 1'
-
-
-def test_player_one_wins_if_has_40_to_15_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 40
-    game.points2 = 15
-    result = game.player_1_won()
-    assert result == 'Game player 1'
-
-
-def test_player_one_wins_if_has_40_to_30_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 40
-    game.points2 = 30
-    result = game.player_1_won()
-    assert result == 'Game player 1'
-
-
-def test_player_one_wins_if_has_advantage_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 'advantage'
-    result = game.player_1_won()
-    assert result == 'Game player 1'
-
-
-def test_deuce_if_has_player_has_advantage_and_loses_ball():
-    game = TennisGame()
-    game.points1 = 'advantage'
-    result = game.player_2_won()
-    assert result == 'Deuce'
-
-
-def test_player_two_wins_if_has_40_to_0_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 0
-    game.points2 = 40
-    result = game.player_2_won()
-    assert result == 'Game player 2'
-
-
-def test_player_two_wins_if_has_40_to_15_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 15
-    game.points2 = 40
-    result = game.player_2_won()
-    assert result == 'Game player 2'
-
-
-def test_player_two_wins_if_has_40_to_30_and_wins_ball():
-    game = TennisGame()
-    game.points1 = 30
-    game.points2 = 40
-    result = game.player_2_won()
-    assert result == 'Game player 2'
-
-
-def test_player_two_wins_if_has_advantage_and_wins_ball():
-    game = TennisGame()
-    game.points2 = 'advantage'
-    result = game.player_2_won()
-    assert result == 'Game player 2'
-
-
-def test_15_to_15_is_displayed_15_all():
-    game = TennisGame()
-    game.points1 = 15
-    game.points2 = 0
-    result = game.player_2_won()
-    assert result == '15 all'
-
-
-def test_30_to_30_is_displayed_30_all():
-    game = TennisGame()
-    game.points1 = 15
-    game.points2 = 30
-    result = game.player_1_won()
-    assert result == '30 all'
-
-
-def test_40_to_40_is_displayed_deuce():
-    game = TennisGame()
-    game.points1 = 30
-    game.points2 = 40
-    result = game.player_1_won()
-    assert result == 'Deuce'
-
-
-def test_increment_score_from_0():
-    result = TennisGame.increment_points(0)
-    assert result == 15
-
-
-def test_increment_score_from_15():
-    result = TennisGame.increment_points(15)
-    assert result == 30
-
-
-def test_increment_score_from_30():
-    result = TennisGame.increment_points(30)
-    assert result == 40
+def test_update():
+    subjects = ResearchSubjects()
+    subjects.collection = [test_subject]
+    new_data = 66.2
+    updated_subject = ResearchSubject(test_subject.identifier, new_data)
+    subjects.update(updated_subject)
+    stored = next(filter(lambda s: s.identifier == test_subject.identifier, subjects.collection))
+    assert stored.identifier == test_subject.identifier
+    assert stored.data == updated_subject.data
