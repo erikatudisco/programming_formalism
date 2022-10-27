@@ -220,9 +220,19 @@ The point of designing with modular development is to enforce information hiding
 Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declartive programming which focuses on how you code. One can use any number of programming paradigms to implement the objectorieted design.
 
 An object is the representation of a thing or concept, that encapsulates both data and the actions perfomed on it. A key concept of an object is that it interactact with the world through message passing of its parameters. 
+
+An object is charachterised by a number of operations and a state which remembers the effect of these operations. 
+
+An object oriented model is comprised of a number of objects which are clearly delimited parts of the system.
+Objects also carry any association to other obejcts in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct comunication that is they know of echother but to not pass messages between eachother.
+A dynamic object relationship on the other hand imples two or more objects that actually comunicae whith one and onther
+
+An object can be composed of other object, such can be achived either through **composition** in the way that a person is composed by its parts head, arms, legs and body to give an example.
+Key conepts in achiving these relationships are the relationships:
 * The concept of Information Hiding 
 * The concept of Encapsulation
 * The concept of message passing
+
 
 Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstact a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. Thes classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are gennerally instanciated as objects again which are the interacting entities of our software. 
 
