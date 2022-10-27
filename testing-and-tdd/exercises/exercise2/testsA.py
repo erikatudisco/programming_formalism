@@ -1,6 +1,6 @@
 import pytest
 
-from research import ResearchSubject, ResearchSubjects
+from research_dic import ResearchSubject, ResearchSubjects
 
 test_subject = ResearchSubject('123', 45.3)
 
